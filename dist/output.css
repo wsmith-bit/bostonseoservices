@@ -1,0 +1,5 @@
+/* output.css - Precompiled Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Simulated minified Tailwind build */
