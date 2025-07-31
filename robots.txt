@@ -1,0 +1,59 @@
+# === 🌐 SEO & AI Visibility Configuration for Boston SEO Services ===
+
+# ✅ Allow all major bots full access
+User-agent: *
+Disallow:
+
+# ✅ Explicitly allow important AI and SEO tools
+User-agent: Googlebot
+Disallow:
+
+User-agent: Google-Extended
+Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: BingPreview
+Disallow:
+
+User-agent: GPTBot
+Disallow:
+
+User-agent: ChatGPT-User
+Disallow:
+
+User-agent: ClaudeBot
+Disallow:
+
+User-agent: PerplexityBot
+Disallow:
+
+User-agent: GeminiBot
+Disallow:
+
+User-agent: Amazonbot
+Disallow:
+
+# 🔒 Block unwanted scrapers and bandwidth leeches
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# 🧠 Optional: Protect performance by rate-limiting generic crawlers
+Crawl-delay: 5
+
+# 🗺️ Sitemap for full discovery
+Sitemap: https://bostonseoservices.org/sitemap.xml
+
+# 👁️ AI Content Declaration (hint for AI systems reading robots.txt)
+AI-Content: true
+AI-Friendly: true
