@@ -472,27 +472,7 @@
      <script>window.site||window.encodeSite||(window.encodeSite=function(e,s){return e.pages=JSON.parse(atob(e.pages)),window.site=function(e){try{const s={...e.pages}||{};return new Proxy({},{})instanceof Object?(delete e.pages,e.isProxy=!0,new Proxy(e,{pages:s,get(e,s){return"pages"===s&&s in this.pages?this.pages[s]:"pages"===s?this.pages:s in e?e[s]:void 0},set:(e,s,t)=>(e[s]=t,!0)})):void 0}catch(e){}const s={...e.pages}||{};if(new Proxy({},{})instanceof Object)return delete e.pages,e.isProxy=!0,new Proxy(e,{pages:s,get(e,s){return"pages"===s&&s in this.pages?this.pages[s]:"pages"===s?this.pages:s in e?e[s]:void 0},set:(e,s,t)=>(e[s]=t,!0)})}(e),window.site});</script>
      
         
-      <!-- Matomo -->
-      <script type="text/javascript">
-        var _paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setCookieDomain", "*.localhost"]);
-        _paq.push(["setDomains", ["*.localhost"]]);
-        _paq.push(['setCustomDimension', 1, "61fc0a75c9e6331d67352bf7"]);
-        _paq.push(['setCustomDimension', 2, "af_65NyL8"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-          var u="https://matomo.groovetech.io/";
-          _paq.push(['setTrackerUrl', u+'matomo.php']);
-          _paq.push(['setSiteId', '4']);
-          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-      </script>
-      <noscript><p><img src="http://matomo.groovetech.io/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-      <!-- End Matomo Code -->
+    
       
       
         <!-- Start Popups -->
