@@ -1,5 +1,7 @@
 # === 🌐 SEO & AI Visibility Configuration for Boston SEO Services ===
 
+Sitemap: https://bostonseoservices.org/sitemap.xml
+
 # ✅ Allow all major bots full access
 User-agent: *
 Disallow:
