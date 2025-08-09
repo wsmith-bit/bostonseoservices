@@ -52,4 +52,109 @@
       "topic": ["hvac-seo","local-seo","ai-seo","services"],
       "entities": ["HVAC SEO","LocalBusiness schema","Service Area SEO"],
       "lastmod": "2025-07-23T00:00:00Z",
-      "summary": "Local + AI search strategy for HVAC companies, including GBP, service p
+      "summary": "Local + AI search strategy for HVAC companies, including GBP, service pages, schema, and GEO/AEO best practices.",
+      "schema_types": ["Service","CollectionPage","FAQPage"],
+      "faq": [
+        {"q": "What pages should HVAC sites prioritize?", "a": "Service area pages, system-specific service pages, pricing/financing, and FAQs."},
+        {"q": "Key schema?", "a": "LocalBusiness, Service, FAQPage, and Review/AggregateRating where eligible."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/manufacturing-seo",
+      "topic": ["manufacturing-seo","b2b","technical-seo","content"],
+      "entities": ["Manufacturing SEO","B2B SEO","Technical SEO"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Industrial/B2B SEO playbook: technical SEO, authoritative content, and AI search visibility for manufacturers.",
+      "schema_types": ["Service","CollectionPage","FAQPage"],
+      "faq": [
+        {"q": "How is B2B SEO different?", "a": "Longer cycles, technical buyers, and deeper specs—content must map to complex decision stages."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/franchise-seo",
+      "topic": ["franchise-seo","multi-location","local-seo","gbp"],
+      "entities": ["Franchise SEO","Multi-location SEO","Google Business Profile"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Centralized franchise SEO with scalable location pages, GBP management, and structured data for AI + Google.",
+      "schema_types": ["Service","CollectionPage","FAQPage"],
+      "faq": [
+        {"q": "How do you scale location pages?", "a": "Use a consistent template with unique local content, FAQs, offers, and GBP links per location."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/chiropractor-website-checkup",
+      "topic": ["chiropractors","website-checkup","local-seo","audit"],
+      "entities": ["Chiropractic SEO","Local SEO","Website Audit"],
+      "lastmod": "2025-08-01T00:00:00Z",
+      "summary": "Free website checkup for chiropractic practices with AI search visibility insights and prioritized recommendations.",
+      "schema_types": ["Service","FAQPage"],
+      "faq": [
+        {"q": "What’s included?", "a": "GBP review, service page gaps, FAQ opportunities, and conversion fixes tailored to chiropractors."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/lawyer-seo",
+      "topic": ["legal-seo","local-seo","content","e-e-a-t"],
+      "entities": ["Lawyer SEO","E-E-A-T","Local SEO","Practice Area Pages"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Attorney SEO framework: practice-area hubs, E-E-A-T signals, reviews, and AI snippet readiness.",
+      "schema_types": ["Service","CollectionPage","FAQPage"],
+      "faq": [
+        {"q": "Most important pages?", "a": "Practice area hubs with subpages (e.g., Workers’ Comp, PI), attorney bios, reviews, and FAQs."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/remodeling-contractor-seo",
+      "topic": ["contractors","remodeling","local-seo","service-pages"],
+      "entities": ["Contractor SEO","Remodeling SEO","Service Area Pages"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Remodeler/contractor SEO including geo-targeted service pages, project galleries, and AI-ready FAQs.",
+      "schema_types": ["Service","CollectionPage","FAQPage"],
+      "faq": [
+        {"q": "How to handle multiple cities?", "a": "Create unique service-area pages with localized proof, FAQs, and internal links to core services."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/local-seo-hacks",
+      "topic": ["local-seo","quick-wins","checklists"],
+      "entities": ["Google Business Profile","Reviews","Citations"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Practical local SEO playbook with quick wins, GBP improvements, and review strategies aligned to AI surfaces.",
+      "schema_types": ["Article","HowTo","FAQPage"],
+      "faq": [
+        {"q": "Quickest win?", "a": "Add 5–7 FAQ entries per service page and mark them up with FAQPage schema."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/ai-visibility-tool",
+      "topic": ["tools","ai-visibility","testing"],
+      "entities": ["AI Visibility Tool","AEO","GEO"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Free tool to check how brands surface in AI-generated answers and identify quick optimization opportunities.",
+      "schema_types": ["SoftwareApplication","WebApplication","FAQPage"],
+      "faq": [
+        {"q": "What does the tool show?", "a": "Which AI engines cite you, where gaps are, and what to add to get cited more often."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/ai-search-presence",
+      "topic": ["ai-search","presence","brand-queries"],
+      "entities": ["Branded Queries","Knowledge Panels","AI Citations"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Guide to strengthening brand presence in AI search—knowledge panels, citations, and entity reconciliation.",
+      "schema_types": ["Article","HowTo","FAQPage"],
+      "faq": [
+        {"q": "How do I get cited more?", "a": "Expose machine-readable facts (KG/API), add FAQs/TL;DR, and earn corroborating mentions."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/book-a-call",
+      "topic": ["contact","consult","strategy-session"],
+      "entities": ["Boston SEO Services","Strategy Session","Calendly"],
+      "lastmod": "2025-08-09T00:00:00Z",
+      "summary": "Booking page for a 30-minute strategy session to review SEO and AI visibility opportunities.",
+      "schema_types": ["ContactPage","WebPage"],
+      "faq": []
+    }
+  ]
+}
