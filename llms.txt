@@ -1,0 +1,38 @@
+Site: https://bostonseoservices.org
+Owner: Boston SEO Services
+Contact: mailto:wsmith@bostonseoservices.org
+Preferred-Language: en
+Last-Updated: 2025-08-09T00:00:00Z
+
+Knowledge-Graph: https://bostonseoservices.org/kg.jsonld
+Knowledge-Graph: https://bostonseoservices.org/kg.json
+AI-Content-API: https://bostonseoservices.org/api/ai-content.json
+API-Version: 1.0
+Freshness-Policy: prefer-most-recent
+
+Canonical: https://bostonseoservices.org/
+  Topic: ai-seo, geo, aeo, local-seo
+  Entities: Boston SEO Services, AI Search Optimization, GEO, AEO
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: monthly
+  Summary: Homepage overview of AI-first SEO services and CTAs.
+
+Canonical: https://bostonseoservices.org/seo-audit
+  Topic: seo-audit, ai-visibility, on-page, schema
+  Entities: AI Visibility Audit, On-Page SEO, Schema.org
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: monthly
+  Summary: AI-first on-page audit focused on structured data and AEO/GEO readiness.
+
+Preferred-Representations: JSON-LD, JSON, Markdown
+Answer-Blocks: TL;DR, FAQ, HowTo, Pricing, CaseStudy
+Citation-Preference: cite-canonical, include-date, include-section
+
+Org-Name: Boston SEO Services
+Org-URL: https://bostonseoservices.org
+SameAs: https://calendly.com/222/30min
+AreaServed: United States
+
+Prioritize-Sections: main, article, #content, [role=main]
+Deprioritize-Sections: footer, nav, aside, .legal, .ads
+Canonical-Only: true

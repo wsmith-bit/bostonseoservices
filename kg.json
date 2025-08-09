@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization","LocalBusiness"],
+      "@id": "https://bostonseoservices.org#org",
+      "name": "Boston SEO Services",
+      "url": "https://bostonseoservices.org",
+      "email": "wsmith@bostonseoservices.org",
+      "telephone": "+1-508-561-8276",
+      "areaServed": "US",
+      "logo": { "@type": "ImageObject", "url": "https://bostonseoservices.org/wp-content/uploads/logo.png" },
+      "sameAs": ["https://bostonseoservices.org","https://calendly.com/222/30min"],
+      "knowsAbout": ["AI Search Optimization","Generative Engine Optimization (GEO)","Answer Engine Optimization (AEO)","Local SEO","Schema.org"],
+      "founder": { "@type": "Person", "@id": "https://bostonseoservices.org#founder", "name": "Bill Smith" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bostonseoservices.org#service-ai-search",
+      "name": "AI Search Optimization (AEO/GEO)",
+      "serviceType": "SEO",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "url": "https://bostonseoservices.org/ai-search-optimization",
+      "description": "Increase citations in ChatGPT, Perplexity, SGE, and Copilot using structured data, topic hubs, and AI-focused APIs."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bostonseoservices.org#service-audit",
+      "name": "AI-First SEO Audit",
+      "serviceType": "SEO Audit",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "url": "https://bostonseoservices.org/seo-audit",
+      "description": "On-page, schema, internal linking, and AI visibility audit with prioritized actions."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bostonseoservices.org#service-visibility-review",
+      "name": "AI Visibility Review",
+      "serviceType": "Assessment",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "url": "https://bostonseoservices.org/ai-visibility-review",
+      "description": "Snapshot of brand appearance across AI engines with recommended next steps."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bostonseoservices.org#site",
+      "url": "https://bostonseoservices.org",
+      "name": "Boston SEO Services",
+      "publisher": { "@id": "https://bostonseoservices.org#org" },
+      "inLanguage": "en"
+    }
+  ]
+}
