@@ -15,39 +15,212 @@
       "founder": { "@type": "Person", "@id": "https://bostonseoservices.org#founder", "name": "Bill Smith" }
     },
     {
-      "@type": "Service",
-      "@id": "https://bostonseoservices.org#service-ai-search",
-      "name": "AI Search Optimization (AEO/GEO)",
-      "serviceType": "SEO",
-      "provider": { "@id": "https://bostonseoservices.org#org" },
-      "url": "https://bostonseoservices.org/ai-search-optimization",
-      "description": "Increase citations in ChatGPT, Perplexity, SGE, and Copilot using structured data, topic hubs, and AI-focused APIs."
-    },
-    {
-      "@type": "Service",
-      "@id": "https://bostonseoservices.org#service-audit",
-      "name": "AI-First SEO Audit",
-      "serviceType": "SEO Audit",
-      "provider": { "@id": "https://bostonseoservices.org#org" },
-      "url": "https://bostonseoservices.org/seo-audit",
-      "description": "On-page, schema, internal linking, and AI visibility audit with prioritized actions."
-    },
-    {
-      "@type": "Service",
-      "@id": "https://bostonseoservices.org#service-visibility-review",
-      "name": "AI Visibility Review",
-      "serviceType": "Assessment",
-      "provider": { "@id": "https://bostonseoservices.org#org" },
-      "url": "https://bostonseoservices.org/ai-visibility-review",
-      "description": "Snapshot of brand appearance across AI engines with recommended next steps."
-    },
-    {
       "@type": "WebSite",
       "@id": "https://bostonseoservices.org#site",
       "url": "https://bostonseoservices.org",
       "name": "Boston SEO Services",
       "publisher": { "@id": "https://bostonseoservices.org#org" },
       "inLanguage": "en"
+    },
+
+    /* Homepage */
+    {
+      "@type": "WebPage",
+      "@id": "https://bostonseoservices.org/#home",
+      "url": "https://bostonseoservices.org/",
+      "name": "Boston SEO Services — AI-First SEO, GEO & AEO",
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "about": [{ "@id": "https://bostonseoservices.org#org" }],
+      "primaryImageOfPage": { "@id": "https://bostonseoservices.org#org" },
+      "dateModified": "2025-08-09"
+    },
+
+    /* Pillar: AI Search Optimization */
+    {
+      "@type": ["CollectionPage","Article"],
+      "@id": "https://bostonseoservices.org/ai-search-optimization#pillar",
+      "url": "https://bostonseoservices.org/ai-search-optimization",
+      "name": "AI Search Optimization (AEO/GEO) — Pillar",
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "about": [
+        { "@id": "https://bostonseoservices.org#service-ai-search" },
+        { "@id": "https://bostonseoservices.org#org" }
+      ],
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bostonseoservices.org#service-ai-search",
+      "name": "AI Search Optimization (AEO/GEO)",
+      "serviceType": "SEO",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "areaServed": "US",
+      "url": "https://bostonseoservices.org/ai-search-optimization",
+      "description": "Appear in AI-generated answers (ChatGPT, Google AI Overview, Copilot, Perplexity) with machine-readable content and schema."
+    },
+
+    /* SEO Audit */
+    {
+      "@type": ["Service","WebPage"],
+      "@id": "https://bostonseoservices.org/seo-audit#service",
+      "url": "https://bostonseoservices.org/seo-audit",
+      "name": "AI-First SEO Audit",
+      "serviceType": "SEO Audit",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "about": [{ "@id": "https://bostonseoservices.org#org" }],
+      "description": "On-page, schema, internal linking, and AI visibility audit with prioritized actions.",
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+
+    /* AI Visibility Review */
+    {
+      "@type": ["Service","WebPage"],
+      "@id": "https://bostonseoservices.org/ai-visibility-review#service",
+      "url": "https://bostonseoservices.org/ai-visibility-review",
+      "name": "AI Visibility Review",
+      "serviceType": "Assessment",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "description": "Snapshot of brand presence across AI engines with next-step guidance.",
+      "inLanguage": "en",
+      "dateModified": "2025-08-01"
+    },
+
+    /* HVAC SEO */
+    {
+      "@type": ["Service","CollectionPage"],
+      "@id": "https://bostonseoservices.org/hvac-seo-for-local#service",
+      "url": "https://bostonseoservices.org/hvac-seo-for-local",
+      "name": "HVAC SEO for Local Companies",
+      "serviceType": "Local SEO",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "inLanguage": "en",
+      "description": "Local + AI search for HVAC: GBP, service pages, schema, GEO/AEO.",
+      "dateModified": "2025-07-23"
+    },
+
+    /* Manufacturing SEO */
+    {
+      "@type": ["Service","CollectionPage"],
+      "@id": "https://bostonseoservices.org/manufacturing-seo#service",
+      "url": "https://bostonseoservices.org/manufacturing-seo",
+      "name": "Manufacturing SEO (B2B)",
+      "serviceType": "B2B SEO",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "description": "Industrial/B2B SEO: technical SEO, authoritative content, AI visibility.",
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+
+    /* Franchise SEO */
+    {
+      "@type": ["Service","CollectionPage"],
+      "@id": "https://bostonseoservices.org/franchise-seo#service",
+      "url": "https://bostonseoservices.org/franchise-seo",
+      "name": "Franchise SEO (Multi-location)",
+      "serviceType": "Local SEO at scale",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "description": "Scalable location pages, GBP management, structured data.",
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+
+    /* Chiropractor Website Checkup */
+    {
+      "@type": ["Service","WebPage"],
+      "@id": "https://bostonseoservices.org/chiropractor-website-checkup#service",
+      "url": "https://bostonseoservices.org/chiropractor-website-checkup",
+      "name": "Chiropractor Website Checkup",
+      "serviceType": "Website Audit",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "description": "Free checkup for chiropractic practices with AI visibility insights.",
+      "inLanguage": "en",
+      "dateModified": "2025-08-01"
+    },
+
+    /* Lawyer SEO */
+    {
+      "@type": ["Service","CollectionPage"],
+      "@id": "https://bostonseoservices.org/lawyer-seo#service",
+      "url": "https://bostonseoservices.org/lawyer-seo",
+      "name": "Lawyer SEO",
+      "serviceType": "Legal SEO",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "description": "Attorney SEO framework: practice hubs, E-E-A-T, reviews, AI snippet readiness.",
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+
+    /* Remodeling Contractor SEO */
+    {
+      "@type": ["Service","CollectionPage"],
+      "@id": "https://bostonseoservices.org/remodeling-contractor-seo#service",
+      "url": "https://bostonseoservices.org/remodeling-contractor-seo",
+      "name": "Remodeling & Contractor SEO",
+      "serviceType": "Local SEO",
+      "provider": { "@id": "https://bostonseoservices.org#org" },
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "description": "Geo-targeted service pages, project proof, and AI-ready FAQs.",
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+
+    /* Local SEO Hacks (Article/HowTo) */
+    {
+      "@type": ["Article","HowTo"],
+      "@id": "https://bostonseoservices.org/local-seo-hacks#article",
+      "url": "https://bostonseoservices.org/local-seo-hacks",
+      "name": "Local SEO Hacks — Quick Wins & Checklists",
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "about": [{ "@id": "https://bostonseoservices.org#org" }],
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+
+    /* AI Visibility Tool */
+    {
+      "@type": ["SoftwareApplication","WebApplication"],
+      "@id": "https://bostonseoservices.org/ai-visibility-tool#app",
+      "url": "https://bostonseoservices.org/ai-visibility-tool",
+      "name": "AI Visibility Tool",
+      "applicationCategory": "SEO Tool",
+      "operatingSystem": "Web",
+      "publisher": { "@id": "https://bostonseoservices.org#org" },
+      "inLanguage": "en",
+      "dateModified": "2025-08-09",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+
+    /* AI Search Presence (Article/HowTo) */
+    {
+      "@type": ["Article","HowTo"],
+      "@id": "https://bostonseoservices.org/ai-search-presence#article",
+      "url": "https://bostonseoservices.org/ai-search-presence",
+      "name": "Strengthen Brand Presence in AI Search",
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "about": [{ "@id": "https://bostonseoservices.org#org" }],
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
+    },
+
+    /* Book a Call (Contact) */
+    {
+      "@type": ["ContactPage","WebPage"],
+      "@id": "https://bostonseoservices.org/book-a-call#contact",
+      "url": "https://bostonseoservices.org/book-a-call",
+      "name": "Book a Strategy Session",
+      "isPartOf": { "@id": "https://bostonseoservices.org#site" },
+      "publisher": { "@id": "https://bostonseoservices.org#org" },
+      "inLanguage": "en",
+      "dateModified": "2025-08-09"
     }
   ]
 }
