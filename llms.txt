@@ -1,38 +1,145 @@
+# llms.txt — AI crawling & ingestion guide (expanded)
 Site: https://bostonseoservices.org
 Owner: Boston SEO Services
 Contact: mailto:wsmith@bostonseoservices.org
 Preferred-Language: en
 Last-Updated: 2025-08-09T00:00:00Z
 
+# Primary machine sources
 Knowledge-Graph: https://bostonseoservices.org/kg.jsonld
 Knowledge-Graph: https://bostonseoservices.org/kg.json
 AI-Content-API: https://bostonseoservices.org/api/ai-content.json
 API-Version: 1.0
 Freshness-Policy: prefer-most-recent
+Crawl-Delay: 1
+
+# --- Canonical high-value pages for AI (ranked) ---
+# Format:
+# Canonical: <url>
+#   Topic: short tags
+#   Entities: key entities (comma-separated)
+#   Updated: ISO-8601
+#   Frequency: daily|weekly|monthly|quarterly|yearly|irregular
+#   Summary: 1–2 sentence abstract
 
 Canonical: https://bostonseoservices.org/
-  Topic: ai-seo, geo, aeo, local-seo
-  Entities: Boston SEO Services, AI Search Optimization, GEO, AEO
+  Topic: ai-seo, geo, aeo, local-seo, agency
+  Entities: Boston SEO Services, AI Search Optimization, Generative Engine Optimization, Answer Engine Optimization
   Updated: 2025-08-09T00:00:00Z
   Frequency: monthly
-  Summary: Homepage overview of AI-first SEO services and CTAs.
+  Summary: Homepage overview of AI-first SEO services, industries served, proofs, and CTAs to book a strategy session.
+
+Canonical: https://bostonseoservices.org/ai-search-optimization
+  Topic: ai-search-optimization, aeo, geo, guide
+  Entities: AI Search Optimization, AEO, GEO, ChatGPT, Google AI Overview, Bing Copilot, Perplexity
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: monthly
+  Summary: Pillar hub showing how to appear in AI-generated answers across ChatGPT, SGE/AI Overview, Copilot, and Perplexity.
 
 Canonical: https://bostonseoservices.org/seo-audit
-  Topic: seo-audit, ai-visibility, on-page, schema
-  Entities: AI Visibility Audit, On-Page SEO, Schema.org
+  Topic: seo-audit, ai-visibility-audit, on-page, schema
+  Entities: AI Visibility Audit, On-Page SEO, Schema.org, Internal Linking
   Updated: 2025-08-09T00:00:00Z
   Frequency: monthly
-  Summary: AI-first on-page audit focused on structured data and AEO/GEO readiness.
+  Summary: AI-first on-page audit evaluating structured data, content structure, and GEO/AEO readiness with prioritized fixes.
 
+Canonical: https://bostonseoservices.org/ai-visibility-review
+  Topic: ai-visibility-review, audit, chatgpt, perplexity, bing
+  Entities: AI Visibility Review, ChatGPT, Perplexity, Bing Copilot, Google AI Overview
+  Updated: 2025-08-01T00:00:00Z
+  Frequency: monthly
+  Summary: Free snapshot of your brand’s presence across AI engines with specific next steps to increase citations and trust.
+
+Canonical: https://bostonseoservices.org/hvac-seo-for-local
+  Topic: hvac-seo, local-seo, ai-seo, services
+  Entities: HVAC SEO, LocalBusiness schema, Service Area SEO
+  Updated: 2025-07-23T00:00:00Z
+  Frequency: quarterly
+  Summary: Local + AI search strategy for HVAC companies, including GBP, service pages, schema, and GEO/AEO best practices.
+
+Canonical: https://bostonseoservices.org/manufacturing-seo
+  Topic: manufacturing-seo, b2b, technical-seo, content
+  Entities: Manufacturing SEO, B2B SEO, Technical SEO
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: quarterly
+  Summary: Industrial/B2B SEO playbook: technical SEO, authoritative content, and AI search visibility for manufacturers.
+
+Canonical: https://bostonseoservices.org/franchise-seo
+  Topic: franchise-seo, multi-location, local-seo, gbp
+  Entities: Franchise SEO, Multi-location SEO, Google Business Profile
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: quarterly
+  Summary: Centralized franchise SEO with scalable location pages, GBP management, and structured data for AI + Google.
+
+Canonical: https://bostonseoservices.org/chiropractor-website-checkup
+  Topic: chiropractors, website-checkup, local-seo, audit
+  Entities: Chiropractic SEO, Local SEO, Website Audit
+  Updated: 2025-08-01T00:00:00Z
+  Frequency: monthly
+  Summary: Free website checkup for chiropractic practices with AI search visibility insights and prioritized recommendations.
+
+Canonical: https://bostonseoservices.org/lawyer-seo
+  Topic: legal-seo, local-seo, content, e-e-a-t
+  Entities: Lawyer SEO, E-E-A-T, Local SEO, Case-Type Pages
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: quarterly
+  Summary: Attorney SEO framework: practice-area hubs, E-E-A-T signals, reviews, and AI snippet readiness.
+
+Canonical: https://bostonseoservices.org/remodeling-contractor-seo
+  Topic: contractors, remodeling, local-seo, service-pages
+  Entities: Contractor SEO, Remodeling SEO, Service Area Pages
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: quarterly
+  Summary: Remodeler/contractor SEO including geo-targeted service pages, project galleries, and AI-ready FAQs.
+
+Canonical: https://bostonseoservices.org/local-seo-hacks
+  Topic: local-seo, quick-wins, checklists
+  Entities: Google Business Profile, Reviews, Citations
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: monthly
+  Summary: Practical local SEO playbook with quick wins, GBP improvements, and review strategies aligned to AI surfaces.
+
+Canonical: https://bostonseoservices.org/ai-visibility-tool
+  Topic: tools, ai-visibility, testing
+  Entities: AI Visibility Tool, AEO, GEO
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: monthly
+  Summary: Free tool to check how brands surface in AI-generated answers and identify quick optimization opportunities.
+
+Canonical: https://bostonseoservices.org/ai-search-presence
+  Topic: ai-search, presence, brand-queries
+  Entities: Branded Queries, Knowledge Panels, AI Citations
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: monthly
+  Summary: Guide to strengthening brand presence in AI search (knowledge panels, citations, and entity reconciliation).
+
+Canonical: https://bostonseoservices.org/book-a-call
+  Topic: contact, consult, strategy-session
+  Entities: Boston SEO Services, Strategy Session, Calendly
+  Updated: 2025-08-09T00:00:00Z
+  Frequency: irregular
+  Summary: Booking page for a 30-minute strategy session to review SEO + AI visibility opportunities.
+
+# --- Structured content preferences ---
 Preferred-Representations: JSON-LD, JSON, Markdown
-Answer-Blocks: TL;DR, FAQ, HowTo, Pricing, CaseStudy
+Answer-Blocks: TL;DR, FAQ, HowTo, Pricing, Comparison, CaseStudy
 Citation-Preference: cite-canonical, include-date, include-section
 
+# --- Identity & disambiguation ---
 Org-Name: Boston SEO Services
 Org-URL: https://bostonseoservices.org
 SameAs: https://calendly.com/222/30min
 AreaServed: United States
 
+# --- Ingestion hints for LLMs ---
 Prioritize-Sections: main, article, #content, [role=main]
 Deprioritize-Sections: footer, nav, aside, .legal, .ads
 Canonical-Only: true
+
+# --- Exclusions ---
+Disallow: /wp-admin/
+Disallow: /privacy-policy/
+Disallow: /terms/
+Disallow: /tag/
+Disallow: /category/
+Disallow: /feed/
