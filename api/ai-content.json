@@ -6,34 +6,50 @@
     {
       "url": "https://bostonseoservices.org/",
       "topic": ["ai-seo","geo","aeo","local-seo","agency"],
-      "entities": ["Boston SEO Services","AI Search Optimization","GEO","AEO"],
+      "entities": ["Boston SEO Services","AI Search Optimization","Generative Engine Optimization","Answer Engine Optimization"],
       "lastmod": "2025-08-09T00:00:00Z",
-      "summary": "Homepage overview of AI-first SEO services, case studies, industries, and booking.",
+      "summary": "Homepage overview of AI-first SEO services, industries served, proofs, and booking options.",
       "schema_types": ["Organization","LocalBusiness","WebSite"],
       "faq": []
     },
     {
       "url": "https://bostonseoservices.org/ai-search-optimization",
       "topic": ["ai-search-optimization","aeo","geo","guide"],
-      "entities": ["AI Search Optimization","AEO","GEO","Boston SEO Services"],
+      "entities": ["AI Search Optimization","AEO","GEO","ChatGPT","Google AI Overview","Bing Copilot","Perplexity"],
       "lastmod": "2025-08-09T00:00:00Z",
-      "summary": "Pillar hub for appearing in AI-generated answers across ChatGPT, SGE, Copilot, and Perplexity.",
+      "summary": "Pillar hub for appearing in AI-generated answers across ChatGPT, Google AI Overview/SGE, Copilot, and Perplexity.",
       "schema_types": ["CollectionPage","Article"],
       "faq": [
-        {"q":"What is AEO?","a":"Answer Engine Optimization improves how answers are formed and cited by AI systems."},
-        {"q":"What is GEO?","a":"Generative Engine Optimization structures content and data for LLM consumption."}
+        {"q": "What is AEO?", "a": "Answer Engine Optimization structures content for direct, accurate answers and attributions in AI systems."},
+        {"q": "What is GEO?", "a": "Generative Engine Optimization makes your site machine-legible so LLMs can cite you reliably."}
       ]
     },
     {
       "url": "https://bostonseoservices.org/seo-audit",
       "topic": ["seo-audit","ai-visibility-audit","on-page","schema"],
-      "entities": ["AI Visibility Audit","On-Page SEO","Schema.org"],
+      "entities": ["AI Visibility Audit","On-Page SEO","Schema.org","Internal Linking"],
       "lastmod": "2025-08-09T00:00:00Z",
-      "summary": "On-page and schema audit with prioritized actions for AI and search.",
+      "summary": "AI-first on-page audit evaluating structured data, content structure, and GEO/AEO readiness with prioritized fixes.",
       "schema_types": ["Service","FAQPage"],
       "faq": [
-        {"q":"What does the audit cover?","a":"Schema, internal linking, content structure, and AI citation readiness."}
+        {"q": "What does the audit include?", "a": "Structured data checks, internal linking, content chunking, FAQ/HowTo blocks, and freshness signals."},
+        {"q": "Deliverables?", "a": "Prioritized action plan with examples, schema snippets, and page-level recommendations."}
       ]
-    }
-  ]
-}
+    },
+    {
+      "url": "https://bostonseoservices.org/ai-visibility-review",
+      "topic": ["ai-visibility-review","audit","chatgpt","perplexity","bing"],
+      "entities": ["AI Visibility Review","ChatGPT","Perplexity","Bing Copilot","Google AI Overview"],
+      "lastmod": "2025-08-01T00:00:00Z",
+      "summary": "Free snapshot of your brand’s presence across major AI engines with next steps to increase citations.",
+      "schema_types": ["Service","HowTo","FAQPage"],
+      "faq": [
+        {"q": "Which AI engines are checked?", "a": "ChatGPT, Google AI Overview/SGE, Bing Copilot, and Perplexity."}
+      ]
+    },
+    {
+      "url": "https://bostonseoservices.org/hvac-seo-for-local",
+      "topic": ["hvac-seo","local-seo","ai-seo","services"],
+      "entities": ["HVAC SEO","LocalBusiness schema","Service Area SEO"],
+      "lastmod": "2025-07-23T00:00:00Z",
+      "summary": "Local + AI search strategy for HVAC companies, including GBP, service p
