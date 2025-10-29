@@ -1,7 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+<link rel="stylesheet" href="/assets/main.css">
+        <link rel="shortcut icon" href="https://assets.grooveapps.com/other/favicon-32x32.png">
+        <style>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="https://assets.grooveapps.com/other/favicon-32x32.png">
+    <link rel="stylesheet" href="/assets/nav.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <style>
     body {
@@ -13,7 +18,9 @@
     </style>
 <title>GroovePages</title>
 </head>
-<body style="background-color: #191c3c">
+<body>
+<header id="site-nav"></header>
+
 	<div class="w-screen h-screen flex flex-col items-center justify-center hidden" id="inline404">
 		<p class="text-white text-5xl text-center tracking-wide">
 			We can not...
@@ -56,5 +63,6 @@
 		fetch404();
 	</script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0f932c3300764bbebdbcc5225ccae832","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script type="module" src="/assets/nav.js"></script>
 </body>
 </html>
