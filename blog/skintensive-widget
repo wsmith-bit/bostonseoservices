@@ -23,7 +23,7 @@
       height: 100%;
       border: none;
     }
-  </style>
+  </style> 
 </head>
 <body>
   <div class="wrapper">
