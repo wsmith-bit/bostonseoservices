@@ -5,307 +5,373 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0B1220" />
 
-  <!-- ✅ Keep original page title (unchanged) -->
+  <!-- Keep original title -->
   <title>Personal Injury Lawyer SEO Company | Boston SEO Services</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Personal Injury Lawyer SEO Company specializing in AI-First SEO (AEO + GEO), local 3-Pack rankings, and conversion-focused strategies that help law firms win more consultations and signed cases." />
+  <meta name="description" content="Personal Injury Lawyer SEO Company specializing in AI-First SEO (AEO + GEO), local map pack rankings, and conversion-focused strategies to help law firms win more consultations and signed cases." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://bostonseoservices.org/personal-injury-lawyer-seo-company" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Personal Injury Lawyer SEO Company | Boston SEO Services" />
   <meta property="og:description" content="AI-First SEO for personal injury law firms: rank higher, get cited by AI, and convert searches into consultations and signed cases." />
   <meta property="og:url" content="https://bostonseoservices.org/personal-injury-lawyer-seo-company" />
   <meta property="og:image" content="https://images.groovetech.io/EQMbKzk-eYInZ5PrAqXYm1NVSEq0JOfLt8F4l4QE8M0/rs:fit:1200:630:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNzE2NDc5NjcyX1NjcmVlbnNob3QyMDI0MDUyMzExNTQxMS5wbmc.webp" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Personal Injury Lawyer SEO Company | Boston SEO Services" />
-  <meta name="twitter:description" content="AI-First SEO for PI firms: Google + Maps + AI answers (AEO/GEO). Get more consults and cases." />
+  <meta name="twitter:description" content="AI-First SEO for PI firms: Google + Maps + AI answers (AEO/GEO)." />
   <meta name="twitter:image" content="https://images.groovetech.io/EQMbKzk-eYInZ5PrAqXYm1NVSEq0JOfLt8F4l4QE8M0/rs:fit:1200:630:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNzE2NDc5NjcyX1NjcmVlbnNob3QyMDI0MDUyMzExNTQxMS5wbmc.webp" />
 
   <link rel="icon" href="https://assets.grooveapps.com/images/5e6132bc8499160dc2cdb0e4/1585866409_boston-seo-services-logo1a0d8.png?update=2" />
 
-  <!-- ✅ Your Tailwind build -->
+  <!-- Optional: keep your css reset/theme file (won't add tailwind utilities unless compiled) -->
   <link rel="stylesheet" href="/assets/main.css" />
 
-  <!-- tiny inline helpers (no tracking, very light) -->
   <style>
-    html { scroll-behavior: smooth; }
-    .focus-ring:focus { outline:none; box-shadow:0 0 0 4px rgba(59,130,246,.25); }
-    .shadow-soft { box-shadow: 0 18px 50px rgba(0,0,0,.45); }
+    :root{
+      --bg:#050814;
+      --card:rgba(255,255,255,.06);
+      --line:rgba(255,255,255,.10);
+      --text:#e9eefc;
+      --muted:rgba(233,238,252,.72);
+      --muted2:rgba(233,238,252,.55);
+      --blue:#3b82f6;
+      --emerald:#34d399;
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --r12:12px; --r16:16px; --r24:24px;
+      --max:1120px;
+      --pad: clamp(16px, 3vw, 28px);
+      font-synthesis-weight:none;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background: radial-gradient(900px 600px at 50% -20%, rgba(59,130,246,.25), transparent 60%),
+                  radial-gradient(700px 500px at 95% 110%, rgba(52,211,153,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+    .topbar{
+      border-bottom:1px solid var(--line);
+      background: rgba(5,8,20,.72);
+      backdrop-filter: blur(10px);
+    }
+    .topbar .row{
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:10px 0;font-size:12px;color:var(--muted);
+    }
+    .dot{width:8px;height:8px;border-radius:99px;background:var(--emerald);display:inline-block}
+    .u{ text-decoration: underline; text-underline-offset:4px }
+    header{
+      position:sticky;top:0;z-index:40;
+      border-bottom:1px solid var(--line);
+      background: rgba(5,8,20,.72);
+      backdrop-filter: blur(10px);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      padding:14px 0;
+    }
+    .brand{display:flex;align-items:center;gap:12px;min-width:220px}
+    .brand img{width:40px;height:40px;border-radius:14px}
+    .brand .t1{font-weight:700;font-size:14px}
+    .brand .t2{font-size:12px;color:var(--muted)}
+    .links{display:none;gap:18px;align-items:center;font-size:14px;color:rgba(233,238,252,.85)}
+    .links a:hover{color:#fff}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:10px 14px;border-radius:14px;font-weight:700;
+      border:1px solid var(--line);background:rgba(255,255,255,.06);
+      box-shadow: var(--shadow);
+    }
+    .btn:hover{background:rgba(255,255,255,.10)}
+    .btn.primary{border:none;background:var(--blue);color:#fff}
+    .btn.primary:hover{filter:brightness(1.08)}
+    .btn.green{border:none;background:var(--emerald);color:#04110b}
+    .btn.green:hover{filter:brightness(1.05)}
+    .menuBtn{display:inline-flex}
+    .mobile{display:none;border-top:1px solid var(--line);padding:12px 0}
+    .mobile a{display:block;padding:10px 0;color:rgba(233,238,252,.85)}
+    .mobile a:hover{color:#fff}
+
+    .hero{padding:44px 0 28px}
+    .grid{display:grid;gap:20px}
+    .g12{grid-template-columns:1fr}
+    .pill{
+      display:inline-flex;align-items:center;gap:10px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      padding:6px 10px;border-radius:999px;font-size:12px;color:rgba(233,238,252,.88);
+    }
+    h1{margin:12px 0 0;font-size: clamp(34px, 4.5vw, 52px);line-height:1.05;letter-spacing:-.02em}
+    h2{margin:0;font-size: clamp(26px, 3vw, 36px);line-height:1.15;letter-spacing:-.02em}
+    h3{margin:0;font-size:20px}
+    .lead{margin:14px 0 0;font-size:18px;color:var(--muted);max-width:720px}
+    .sub{margin:12px 0 0;font-size:13px;color:var(--muted2);max-width:720px}
+    .card{
+      border:1px solid var(--line);
+      background:var(--card);
+      border-radius: var(--r24);
+      box-shadow: var(--shadow);
+    }
+    .p16{padding:16px}
+    .p20{padding:20px}
+    .p24{padding:24px}
+    .kpi{display:grid;gap:12px;margin-top:18px}
+    .kpi .item{padding:16px;border-radius:var(--r16);border:1px solid var(--line);background:rgba(255,255,255,.06);box-shadow:var(--shadow)}
+    .kpi .item b{display:block}
+    .actions{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+    .toc{margin-top:22px}
+    .toc .links2{display:grid;gap:10px;margin-top:12px}
+    .toc a{
+      border:1px solid var(--line);
+      background:rgba(5,8,20,.35);
+      padding:10px 12px;border-radius:14px;
+    }
+    .toc a:hover{background:rgba(5,8,20,.55)}
+    .section{padding:44px 0}
+    .section.alt{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(5,8,20,.35)}
+    .cols3{display:grid;gap:16px;margin-top:18px}
+    .list{margin:12px 0 0;padding:0;list-style:none}
+    .list li{margin:8px 0;color:rgba(233,238,252,.85)}
+    .tableWrap{overflow:auto;margin-top:18px}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th,td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+    th{color:rgba(233,238,252,.9);text-align:left}
+    td{color:rgba(233,238,252,.72)}
+    .footerCta{display:flex;flex-direction:column;gap:14px;align-items:flex-start;justify-content:space-between}
+    .small{font-size:12px;color:rgba(233,238,252,.55)}
+    .iframeWrap{margin-top:14px;border-radius:var(--r16);overflow:hidden;border:1px solid var(--line);background:#000}
+    .ratio{position:relative;width:100%;padding-bottom:56.25%}
+    .ratio iframe{position:absolute;inset:0;width:100%;height:100%}
+
+    @media (min-width: 860px){
+      .links{display:flex}
+      .menuBtn{display:none}
+      .g12{grid-template-columns: 7fr 5fr}
+      .actions{flex-direction:row}
+      .kpi{grid-template-columns:repeat(3,1fr)}
+      .toc .links2{grid-template-columns:repeat(5,1fr)}
+      .cols3{grid-template-columns:repeat(3,1fr)}
+      .footerCta{flex-direction:row;align-items:center}
+    }
   </style>
 </head>
 
-<body class="bg-slate-950 text-slate-100 antialiased">
-  <!-- Top bar -->
-  <div class="border-b border-white/10 bg-slate-950/70 backdrop-blur">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between text-xs text-slate-300">
-      <p class="flex items-center gap-2">
-        <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
-        AI-First SEO for personal injury firms (Google + Maps + AI answers)
-      </p>
-      <a href="#audit" class="hover:text-white underline underline-offset-4">Free AI visibility audit</a>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="row">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="dot"></span>
+          <span>AI-First SEO for personal injury firms (Google + Maps + AI answers)</span>
+        </div>
+        <a class="u" href="#audit">Free AI visibility audit</a>
+      </div>
     </div>
   </div>
 
-  <!-- Header -->
-  <header class="sticky top-0 z-40 border-b border-white/10 bg-slate-950/70 backdrop-blur">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3" aria-label="Boston SEO Services home">
-        <img
-          src="https://images.groovetech.io/w6GrHDwsG4HJ3wW3oF9WMSoewshX3oPsqV2_6MWBAPs/rs:fit:120:120:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNjIyODE0NTg1X2Jvc3Rvbi1zZW8tc2VydmljZXMtbG9nbyUyMDI2MHgyNjAuanBnLmpwZw.webp"
-          alt="Boston SEO Services logo"
-          class="h-10 w-10 rounded-xl"
-          width="40" height="40"
-          loading="lazy"
-        />
-        <div class="leading-tight">
-          <p class="text-sm font-semibold text-white">Boston SEO Services</p>
-          <p class="text-xs text-slate-300">Personal Injury Lawyer SEO Company</p>
-        </div>
-      </a>
-
-      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-200" aria-label="Primary navigation">
-        <a href="#ai-first" class="hover:text-white">AI-First SEO</a>
-        <a href="#strategy" class="hover:text-white">Strategy</a>
-        <a href="#comparison" class="hover:text-white">Compared</a>
-        <a href="#deliverables" class="hover:text-white">Deliverables</a>
-        <a href="#faq" class="hover:text-white">FAQ</a>
-        <a href="#audit" class="inline-flex items-center justify-center rounded-xl bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-400 focus-ring">
-          Free Audit
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="/" aria-label="Boston SEO Services home">
+          <img src="https://images.groovetech.io/w6GrHDwsG4HJ3wW3oF9WMSoewshX3oPsqV2_6MWBAPs/rs:fit:120:120:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNjIyODE0NTg1X2Jvc3Rvbi1zZW8tc2VydmljZXMtbG9nbyUyMDI2MHgyNjAuanBnLmpwZw.webp" alt="Boston SEO Services logo" loading="lazy" width="40" height="40">
+          <div>
+            <div class="t1">Boston SEO Services</div>
+            <div class="t2">Personal Injury Lawyer SEO Company</div>
+          </div>
         </a>
-      </nav>
 
-      <button id="mobileBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10 focus-ring" aria-expanded="false" aria-controls="mobileMenu">
-        Menu
-      </button>
-    </div>
+        <nav class="links" aria-label="Primary navigation">
+          <a href="#ai-first">AI-First SEO</a>
+          <a href="#strategy">Strategy</a>
+          <a href="#comparison">Compared</a>
+          <a href="#deliverables">Deliverables</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn primary" href="#audit">Free Audit</a>
+        </nav>
 
-    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-slate-950/90">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-3 text-sm text-slate-200">
-        <a href="#ai-first" class="hover:text-white">AI-First SEO</a>
-        <a href="#strategy" class="hover:text-white">Strategy</a>
-        <a href="#comparison" class="hover:text-white">Compared</a>
-        <a href="#deliverables" class="hover:text-white">Deliverables</a>
-        <a href="#faq" class="hover:text-white">FAQ</a>
-        <a href="#audit" class="inline-flex items-center justify-center rounded-xl bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-400 focus-ring">
-          Free Audit
-        </a>
+        <button id="mobileBtn" class="btn menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      </div>
+
+      <div id="mobileMenu" class="mobile">
+        <a href="#ai-first">AI-First SEO</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#comparison">Compared</a>
+        <a href="#deliverables">Deliverables</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn primary" href="#audit" style="margin-top:10px;box-shadow:none">Free Audit</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute -top-40 left-1/2 h-[520px] w-[920px] -translate-x-1/2 rounded-full bg-blue-500/20 blur-3xl"></div>
-        <div class="absolute -bottom-40 right-0 h-[420px] w-[720px] rounded-full bg-emerald-500/10 blur-3xl"></div>
-      </div>
-
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-20 relative">
-        <div class="grid lg:grid-cols-12 gap-10 items-center">
-          <div class="lg:col-span-7">
-            <p class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200">
-              <span class="h-2 w-2 rounded-full bg-blue-400"></span>
-              Built for rankings + AI-generated answers (AEO/GEO)
+    <section class="hero">
+      <div class="wrap">
+        <div class="grid g12">
+          <div>
+            <div class="pill"><span style="width:8px;height:8px;border-radius:99px;background:rgba(59,130,246,.9)"></span> Built for rankings + AI-generated answers (AEO/GEO)</div>
+            <h1>AI-First SEO for Personal Injury Lawyers: Rank Higher, Get Cited, Win More Cases</h1>
+            <p class="lead">
+              As a leading <strong>Personal Injury Lawyer SEO Company</strong>, we combine traditional Google rankings with AI-optimized visibility so your firm appears in Search, Maps, and AI-driven recommendations—turning research into calls and consultations.
+            </p>
+            <p class="sub">
+              AI-First SEO includes <strong>Answer Engine Optimization (AEO)</strong> and <strong>Generative Engine Optimization (GEO)</strong>—practices that help AI systems understand your firm, trust your content, and cite you when prospects ask high-intent injury questions.
             </p>
 
-            <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
-              AI-First SEO for Personal Injury Lawyers: Rank Higher, Get Cited, Win More Cases
-            </h1>
-
-            <p class="mt-4 text-lg text-slate-200 max-w-2xl">
-              As a leading <strong>Personal Injury Lawyer SEO Company</strong>, we combine traditional Google rankings with AI-optimized visibility to help law firms appear in Search, Maps, and AI-driven recommendations—so more prospects choose you and book a consultation.
-            </p>
-
-            <p class="mt-6 text-sm text-slate-400 max-w-2xl">
-              AI-First SEO includes <strong>Answer Engine Optimization (AEO)</strong> and <strong>Generative Engine Optimization (GEO)</strong>—the practices that make your content easy for AI systems to understand, trust, and cite when people ask high-intent injury questions.
-            </p>
-
-            <div class="mt-7 flex flex-col sm:flex-row gap-3">
-              <a href="https://calendly.com/222/15-minute-meeting"
-                 class="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-slate-950 hover:bg-emerald-400 focus-ring shadow-soft">
-                Book a 15-min strategy session
-              </a>
-              <a href="#audit"
-                 class="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 focus-ring">
-                Get a free AI visibility audit
-              </a>
+            <div class="actions">
+              <a class="btn green" href="https://calendly.com/222/15-minute-meeting">Book a 15-min strategy session</a>
+              <a class="btn" href="#audit">Get a free AI visibility audit</a>
             </div>
 
-            <div class="mt-10 grid sm:grid-cols-3 gap-4 text-sm">
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft">
-                <p class="text-white font-semibold">PI Keyword Capture</p>
-                <p class="mt-1 text-slate-300">Case-type + “near me” intent.</p>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft">
-                <p class="text-white font-semibold">AI Citation Readiness</p>
-                <p class="mt-1 text-slate-300">Structured answers AI can use.</p>
-              </div>
-              <div class="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-soft">
-                <p class="text-white font-semibold">Conversion System</p>
-                <p class="mt-1 text-slate-300">More calls + consults + cases.</p>
-              </div>
+            <div class="kpi">
+              <div class="item"><b>PI Keyword Capture</b><span style="color:var(--muted2)">Case-type + “near me” intent.</span></div>
+              <div class="item"><b>AI Citation Readiness</b><span style="color:var(--muted2)">Structured answers AI can use.</span></div>
+              <div class="item"><b>Conversion System</b><span style="color:var(--muted2)">More calls + consults + cases.</span></div>
             </div>
           </div>
 
-          <div class="lg:col-span-5">
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-              <p class="text-sm font-semibold text-white">Quick win checklist</p>
-              <ul class="mt-3 space-y-2 text-sm text-slate-200">
-                <li class="flex gap-2"><span class="text-emerald-400">✓</span> Local map pack visibility and review signals</li>
-                <li class="flex gap-2"><span class="text-emerald-400">✓</span> AI-friendly FAQs and “answer blocks”</li>
-                <li class="flex gap-2"><span class="text-emerald-400">✓</span> Practice area pages aligned to search intent</li>
-                <li class="flex gap-2"><span class="text-emerald-400">✓</span> Technical SEO + speed improvements</li>
-              </ul>
+          <aside class="card p24">
+            <div style="font-weight:800">Quick win checklist</div>
+            <ul class="list">
+              <li>✓ Local map pack visibility and review signals</li>
+              <li>✓ AI-friendly FAQs and answer blocks</li>
+              <li>✓ Practice area pages aligned to search intent</li>
+              <li>✓ Technical SEO + speed improvements</li>
+            </ul>
 
-              <div class="mt-6 rounded-2xl border border-white/10 bg-slate-950/40 p-4">
-                <p class="text-white font-semibold">Watch: AI + law firm SEO</p>
-                <p class="mt-1 text-sm text-slate-300">A short walkthrough of what modern PI SEO looks like.</p>
+            <div class="card p16" style="margin-top:16px;background:rgba(5,8,20,.35)">
+              <div style="font-weight:800">Watch: AI + law firm SEO</div>
+              <div class="small" style="margin-top:6px">A short walkthrough of modern PI SEO.</div>
 
-                <div class="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-black">
-                  <div class="relative w-full" style="padding-bottom:56.25%;">
-                    <iframe
-                      class="absolute inset-0 h-full w-full"
-                      src="https://www.youtube.com/embed/s5rtCgui854?rel=0&modestbranding=1&controls=1"
-                      title="Law Firm SEO - Personal Injury"
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-                  </div>
+              <div class="iframeWrap">
+                <div class="ratio">
+                  <iframe
+                    src="https://www.youtube.com/embed/s5rtCgui854?rel=0&modestbranding=1&controls=1"
+                    title="Law Firm SEO - Personal Injury"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 </div>
               </div>
-
-              <p class="mt-4 text-xs text-slate-400">
-                No tracking scripts on this page. Fast, clean, and privacy-friendly.
-              </p>
             </div>
-          </div>
+
+            <div class="small" style="margin-top:12px">No tracking scripts on this page. Fast, clean, and privacy-friendly.</div>
+          </aside>
         </div>
 
-        <!-- TOC -->
-        <div class="mt-12 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-          <p class="text-sm font-semibold text-white">On this page</p>
-          <div class="mt-3 grid sm:grid-cols-2 lg:grid-cols-5 gap-2 text-sm">
-            <a class="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2 hover:bg-slate-950/60" href="#ai-first">What is AI-First SEO?</a>
-            <a class="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2 hover:bg-slate-950/60" href="#strategy">Our strategy</a>
-            <a class="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2 hover:bg-slate-950/60" href="#comparison">Compared</a>
-            <a class="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2 hover:bg-slate-950/60" href="#deliverables">Deliverables</a>
-            <a class="rounded-xl border border-white/10 bg-slate-950/40 px-3 py-2 hover:bg-slate-950/60" href="#faq">FAQ</a>
+        <div class="card p20 toc">
+          <div style="font-weight:800">On this page</div>
+          <div class="links2">
+            <a href="#ai-first">What is AI-First SEO?</a>
+            <a href="#strategy">Our strategy</a>
+            <a href="#comparison">Compared</a>
+            <a href="#deliverables">Deliverables</a>
+            <a href="#faq">FAQ</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Search landscape shift -->
-    <section class="py-14 lg:py-20 border-y border-white/10 bg-slate-950/40">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-white">Search has changed — and personal injury leads follow the change</h2>
-        <p class="mt-4 text-slate-300 max-w-3xl">
+    <section class="section alt">
+      <div class="wrap">
+        <h2>Search has changed — and personal injury leads follow the change</h2>
+        <p class="lead" style="font-size:16px;max-width:820px">
           Prospects still Google “car accident lawyer near me.” But now they also ask AI tools questions that shape who they trust before they ever click a website.
         </p>
 
-        <div class="mt-8 grid lg:grid-cols-3 gap-6">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <p class="text-white font-semibold">Examples prospects ask AI</p>
-            <ul class="mt-3 space-y-2 text-sm text-slate-200">
+        <div class="cols3">
+          <div class="card p20">
+            <h3>Examples prospects ask AI</h3>
+            <ul class="list">
               <li>• “What should I do after a car accident?”</li>
               <li>• “Do I need a lawyer for a minor crash?”</li>
               <li>• “How much is my injury case worth?”</li>
               <li>• “Who’s the best personal injury lawyer near me?”</li>
             </ul>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <p class="text-white font-semibold">Why it matters</p>
-            <p class="mt-3 text-sm text-slate-300">
-              If your firm’s content isn’t structured for AI discovery, you’re invisible during the research phase — when the shortlist is formed.
+          <div class="card p20">
+            <h3>Why it matters</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              If your firm’s content isn’t structured for AI discovery, you’re invisible during the research phase—when the shortlist is formed.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <p class="text-white font-semibold">What we fix</p>
-            <p class="mt-3 text-sm text-slate-300">
-              We build “answer-ready” sections, reinforce local trust signals, and add schema so your firm can be accurately summarized and cited.
+          <div class="card p20">
+            <h3>What we fix</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              We build answer-ready sections, reinforce local trust signals, and add schema so your firm can be accurately summarized and cited.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AI-first explanation -->
-    <section id="ai-first" class="py-14 lg:py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-white">What is AI-First SEO for personal injury law firms?</h2>
-        <p class="mt-3 text-slate-300 max-w-3xl">
-          AI-First SEO is a modern approach that strengthens your firm’s visibility across Google Search, Google Maps, and AI-driven discovery tools.
-          It helps you win the “decision window” when prospects research next steps, timelines, and who to call.
+    <section id="ai-first" class="section">
+      <div class="wrap">
+        <h2>What is AI-First SEO for personal injury law firms?</h2>
+        <p class="lead" style="font-size:16px;max-width:860px">
+          AI-First SEO strengthens your visibility across Google Search, Google Maps, and AI-driven discovery tools.
+          It helps you win the decision window when prospects research next steps, timelines, and who to call.
         </p>
 
-        <div class="mt-10 grid lg:grid-cols-3 gap-6">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">Traditional SEO</h3>
-            <p class="mt-3 text-slate-300 text-sm">
+        <div class="cols3">
+          <div class="card p20">
+            <h3>Traditional SEO</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
               Practice-area and location visibility for keywords like “car accident lawyer,” “truck accident attorney,” “slip and fall lawyer,” and “wrongful death attorney.”
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">Answer Engine Optimization (AEO)</h3>
-            <p class="mt-3 text-slate-300 text-sm">
-              We structure clear answers (steps, timelines, checklists, definitions) so AI systems can extract and cite your content with confidence.
+          <div class="card p20">
+            <h3>Answer Engine Optimization (AEO)</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              We structure clear answers (steps, timelines, definitions) so AI systems can extract and cite your content with confidence.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">Generative Engine Optimization (GEO)</h3>
-            <p class="mt-3 text-slate-300 text-sm">
-              We strengthen the “trust graph” around your brand—entities, consistent business data, authority signals, and topical depth—so AI systems recommend you more often.
+          <div class="card p20">
+            <h3>Generative Engine Optimization (GEO)</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              We strengthen the trust graph around your brand—entities, consistent business data, authority signals, and topical depth—so AI systems recommend you more often.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Strategy -->
-    <section id="strategy" class="py-14 lg:py-20 border-y border-white/10 bg-slate-950/40">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-white">Our AI-First SEO strategy for personal injury lawyers</h2>
-        <p class="mt-3 text-slate-300 max-w-3xl">
+    <section id="strategy" class="section alt">
+      <div class="wrap">
+        <h2>Our AI-First SEO strategy for personal injury lawyers</h2>
+        <p class="lead" style="font-size:16px;max-width:860px">
           We build a durable visibility system—so your firm earns rankings, trust, and conversions even as search evolves.
         </p>
 
-        <div class="mt-10 grid lg:grid-cols-2 gap-6">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">1) High-intent keyword + case-type mapping</h3>
-            <p class="mt-3 text-slate-300">
-              We map PI keywords to real client intent: “near me,” “best,” “cost,” “timeline,” “settlement,” “do I need a lawyer?”
-              Then we align pages to case types and build internal linking that clarifies authority.
+        <div class="grid" style="grid-template-columns:1fr;gap:16px;margin-top:18px">
+          <div class="card p20">
+            <h3>1) High-intent keyword + case-type mapping</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              We map PI keywords to real client intent (“near me,” “best,” “cost,” “timeline,” “settlement”) and align pages to case types with internal linking that clarifies authority.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">2) AI-friendly content architecture (AEO)</h3>
-            <p class="mt-3 text-slate-300">
-              We add “answer blocks” that AI can parse, while still keeping the content persuasive and human.
-              This improves visibility and builds trust with prospects.
+          <div class="card p20">
+            <h3>2) AI-friendly content architecture (AEO)</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              We add answer blocks AI can parse while keeping content persuasive for humans—improving visibility and trust.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">3) Local authority + map pack signals</h3>
-            <p class="mt-3 text-slate-300">
+          <div class="card p20">
+            <h3>3) Local authority + map pack signals</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
               We optimize the local trust system: Google Business Profile strategy, review signals, citation consistency (NAP), and local relevance content.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">4) Technical SEO + performance</h3>
-            <p class="mt-3 text-slate-300">
+          <div class="card p20">
+            <h3>4) Technical SEO + performance</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
               Faster pages convert better. We focus on crawl clarity, mobile UX, speed, schema support, and frictionless CTAs that increase calls and consult bookings.
             </p>
           </div>
@@ -313,43 +379,42 @@
       </div>
     </section>
 
-    <!-- Comparison -->
-    <section id="comparison" class="py-14 lg:py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-white">AI-First SEO vs traditional law firm SEO</h2>
-        <p class="mt-3 text-slate-300 max-w-3xl">
+    <section id="comparison" class="section">
+      <div class="wrap">
+        <h2>AI-First SEO vs traditional law firm SEO</h2>
+        <p class="lead" style="font-size:16px;max-width:860px">
           If competitors are doing basic SEO, you can beat them by building the authority structures AI and Google reward.
         </p>
 
-        <div class="mt-8 overflow-x-auto rounded-3xl border border-white/10 bg-white/5 shadow-soft">
-          <table class="min-w-full text-sm">
-            <thead class="text-left text-slate-200">
-              <tr class="border-b border-white/10">
-                <th class="p-4">Area</th>
-                <th class="p-4">Traditional SEO</th>
-                <th class="p-4">AI-First SEO (AEO/GEO)</th>
+        <div class="card tableWrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Area</th>
+                <th>Traditional SEO</th>
+                <th>AI-First SEO (AEO/GEO)</th>
               </tr>
             </thead>
-            <tbody class="text-slate-300">
-              <tr class="border-b border-white/10">
-                <td class="p-4 font-semibold text-white">Content</td>
-                <td class="p-4">Blogs + practice pages</td>
-                <td class="p-4">Answer blocks + entity clarity + citations</td>
-              </tr>
-              <tr class="border-b border-white/10">
-                <td class="p-4 font-semibold text-white">Local visibility</td>
-                <td class="p-4">Basic GBP setup</td>
-                <td class="p-4">Map pack strategy + review system + local trust graph</td>
-              </tr>
-              <tr class="border-b border-white/10">
-                <td class="p-4 font-semibold text-white">Conversion</td>
-                <td class="p-4">Generic CTAs</td>
-                <td class="p-4">Intent-matched offers + UX flow + call/consult prompts</td>
+            <tbody>
+              <tr>
+                <td><strong style="color:#fff">Content</strong></td>
+                <td>Blogs + practice pages</td>
+                <td>Answer blocks + entity clarity + citations</td>
               </tr>
               <tr>
-                <td class="p-4 font-semibold text-white">AI visibility</td>
-                <td class="p-4">Not addressed</td>
-                <td class="p-4">Schema + structured answers + topical authority design</td>
+                <td><strong style="color:#fff">Local visibility</strong></td>
+                <td>Basic GBP setup</td>
+                <td>Map pack strategy + review system + local trust graph</td>
+              </tr>
+              <tr>
+                <td><strong style="color:#fff">Conversion</strong></td>
+                <td>Generic CTAs</td>
+                <td>Intent-matched offers + UX flow + call/consult prompts</td>
+              </tr>
+              <tr>
+                <td><strong style="color:#fff">AI visibility</strong></td>
+                <td>Not addressed</td>
+                <td>Schema + structured answers + topical authority design</td>
               </tr>
             </tbody>
           </table>
@@ -357,38 +422,35 @@
       </div>
     </section>
 
-    <!-- Deliverables -->
-    <section id="deliverables" class="py-14 lg:py-20 border-y border-white/10 bg-slate-950/40">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-white">What you get working with our Personal Injury Lawyer SEO Company</h2>
-        <p class="mt-3 text-slate-300 max-w-3xl">
+    <section id="deliverables" class="section alt">
+      <div class="wrap">
+        <h2>What you get working with our Personal Injury Lawyer SEO Company</h2>
+        <p class="lead" style="font-size:16px;max-width:860px">
           Clear deliverables that build rankings, authority, and conversion quality.
         </p>
 
-        <div class="mt-10 grid lg:grid-cols-3 gap-6">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">AI visibility audit</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-300">
+        <div class="cols3">
+          <div class="card p20">
+            <h3>AI visibility audit</h3>
+            <ul class="list">
               <li>• AI answer coverage gaps</li>
               <li>• Entity + topical authority signals</li>
               <li>• Schema opportunities</li>
               <li>• Conversion friction points</li>
             </ul>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">PI content blueprint</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-300">
+          <div class="card p20">
+            <h3>PI content blueprint</h3>
+            <ul class="list">
               <li>• Case-type page plan</li>
               <li>• “Near me” + city targeting</li>
               <li>• FAQ + answer blocks</li>
               <li>• Internal link architecture</li>
             </ul>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold text-xl">Authority + local trust graph</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-300">
+          <div class="card p20">
+            <h3>Authority + local trust graph</h3>
+            <ul class="list">
               <li>• Citation consistency checks</li>
               <li>• Review strategy guidance</li>
               <li>• Local relevance signals</li>
@@ -399,19 +461,18 @@
       </div>
     </section>
 
-    <!-- Audit CTA -->
-    <section id="audit" class="py-14 lg:py-20 border-t border-white/10 bg-gradient-to-b from-blue-600/10 to-transparent">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-12 gap-10 items-start">
-          <div class="lg:col-span-7">
-            <h2 class="text-3xl font-extrabold text-white">Get a free AI visibility audit (fast + practical)</h2>
-            <p class="mt-3 text-slate-300 max-w-2xl">
+    <section id="audit" class="section" style="background:linear-gradient(to bottom, rgba(59,130,246,.12), transparent)">
+      <div class="wrap">
+        <div class="grid g12">
+          <div>
+            <h2>Get a free AI visibility audit (fast + practical)</h2>
+            <p class="lead" style="font-size:16px;max-width:860px">
               Share your firm’s URL and we’ll return a focused checklist of ranking, local, AI-visibility, and conversion improvements.
             </p>
 
-            <div class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-              <h3 class="text-white font-semibold text-xl">What you’ll learn</h3>
-              <ul class="mt-4 space-y-2 text-slate-200 text-sm">
+            <div class="card p20" style="margin-top:18px">
+              <h3>What you’ll learn</h3>
+              <ul class="list">
                 <li>• Where you show up (and where you don’t) for PI intent</li>
                 <li>• The top AI-first upgrades for citations and summaries</li>
                 <li>• What’s blocking conversions on mobile</li>
@@ -420,131 +481,93 @@
             </div>
           </div>
 
-          <div class="lg:col-span-5">
-            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-              <p class="text-white font-semibold">Request your audit</p>
-              <p class="mt-1 text-sm text-slate-300">No tracking. No spam. Just actionable SEO.</p>
+          <div class="card p24">
+            <div style="font-weight:800">Request your audit</div>
+            <div class="small" style="margin-top:6px">No tracking. No spam. Just actionable SEO.</div>
 
-              <!-- Replace action if needed -->
-              <form class="mt-5 space-y-4" method="get" action="https://yoursite.report/" target="_blank" rel="noopener">
-                <label class="block">
-                  <span class="text-sm text-slate-200">Website URL</span>
-                  <input
-                    class="mt-1 w-full rounded-xl border border-white/10 bg-slate-950/50 px-4 py-3 text-white placeholder:text-slate-500 focus-ring"
-                    type="url"
-                    name="url"
-                    placeholder="https://yourlawfirm.com"
-                    required
-                  />
-                </label>
+            <form class="grid" style="gap:12px;margin-top:16px" method="get" action="https://yoursite.report/" target="_blank" rel="noopener">
+              <label>
+                <div class="small" style="color:rgba(233,238,252,.78)">Website URL</div>
+                <input type="url" name="url" required placeholder="https://yourlawfirm.com"
+                  style="width:100%;margin-top:6px;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(5,8,20,.45);color:#fff;outline:none" />
+              </label>
 
-                <label class="block">
-                  <span class="text-sm text-slate-200">Primary city / market</span>
-                  <input
-                    class="mt-1 w-full rounded-xl border border-white/10 bg-slate-950/50 px-4 py-3 text-white placeholder:text-slate-500 focus-ring"
-                    type="text"
-                    name="market"
-                    placeholder="Boston, MA"
-                  />
-                </label>
+              <label>
+                <div class="small" style="color:rgba(233,238,252,.78)">Primary city / market</div>
+                <input type="text" name="market" placeholder="Boston, MA"
+                  style="width:100%;margin-top:6px;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:rgba(5,8,20,.45);color:#fff;outline:none" />
+              </label>
 
-                <input type="hidden" name="apikey" value="1yXV5hJcy7YGcd2Q3d7jqAZlkeLVSI" />
-                <input type="hidden" name="report_from_embed" value="1" />
+              <input type="hidden" name="apikey" value="1yXV5hJcy7YGcd2Q3d7jqAZlkeLVSI" />
+              <input type="hidden" name="report_from_embed" value="1" />
 
-                <button class="w-full rounded-2xl bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-400 focus-ring shadow-soft" type="submit">
-                  Analyze now
-                </button>
+              <button class="btn primary" type="submit" style="width:100%;padding:12px 16px">Analyze now</button>
 
-                <p class="text-xs text-slate-400">
-                  Prefer a call? <a class="underline underline-offset-4 hover:text-white" href="https://calendly.com/222/15-minute-meeting">Book a 15-minute strategy session</a>.
-                </p>
-              </form>
-            </div>
+              <div class="small">
+                Prefer a call? <a class="u" href="https://calendly.com/222/15-minute-meeting">Book a 15-minute strategy session</a>.
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-14 lg:py-20 border-t border-white/10 bg-slate-950/40">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-white">FAQ: AI-First SEO for personal injury lawyers</h2>
-        <p class="mt-3 text-slate-300 max-w-3xl">
-          These are written to be clear for humans and extractable for AI systems.
+    <section id="faq" class="section alt">
+      <div class="wrap">
+        <h2>FAQ: AI-First SEO for personal injury lawyers</h2>
+        <p class="lead" style="font-size:16px;max-width:860px">
+          Written to be clear for humans and extractable for AI systems.
         </p>
 
-        <div class="mt-10 grid lg:grid-cols-2 gap-6">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold">What is AI-First SEO for a personal injury law firm?</h3>
-            <p class="mt-2 text-slate-300 text-sm">
+        <div class="grid" style="grid-template-columns:1fr;gap:16px;margin-top:18px">
+          <div class="card p20">
+            <h3>What is AI-First SEO for a personal injury law firm?</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
               AI-First SEO improves visibility in traditional search (Google rankings + Maps) and in AI-generated answers by structuring content, strengthening authority signals, and adding schema so systems can understand and cite your firm accurately.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold">How does AEO help a PI firm get more consultations?</h3>
-            <p class="mt-2 text-slate-300 text-sm">
-              AEO focuses on clear, direct answers to high-intent questions. When AI tools summarize and reference your content, prospects trust you earlier and convert faster.
+          <div class="card p20">
+            <h3>How does AEO help a PI firm get more consultations?</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              AEO focuses on clear answers to high-intent questions. When AI tools summarize and reference your content, prospects trust you earlier and convert faster.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold">Do I still need traditional SEO if we’re optimizing for AI?</h3>
-            <p class="mt-2 text-slate-300 text-sm">
-              Yes. AI visibility works best when your traditional foundation is strong: fast pages, solid practice area coverage, local signals, and clean technical SEO. AI-First SEO adds structure and authority layers on top.
+          <div class="card p20">
+            <h3>Do I still need traditional SEO if we’re optimizing for AI?</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              Yes. AI visibility works best when your foundation is strong: fast pages, solid practice area coverage, local signals, and clean technical SEO.
             </p>
           </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold">What practice areas benefit most from AI-first content?</h3>
-            <p class="mt-2 text-slate-300 text-sm">
-              Car accidents, truck accidents, motorcycle accidents, slip &amp; fall, wrongful death, and premises liability benefit because prospects search questions and next steps before contacting a lawyer.
-            </p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold">How do you improve local map pack visibility for PI?</h3>
-            <p class="mt-2 text-slate-300 text-sm">
-              We reinforce Google Business Profile relevance, strengthen review signals, improve citation consistency (NAP), and align location content with real search intent.
-            </p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft">
-            <h3 class="text-white font-semibold">What’s the fastest way to see progress?</h3>
-            <p class="mt-2 text-slate-300 text-sm">
-              Usually: tighten technical issues, improve local signals, and upgrade key money pages to match intent with a conversion-first layout—then expand topical authority with AI-friendly answers and supporting pages.
+          <div class="card p20">
+            <h3>What’s the fastest way to see progress?</h3>
+            <p class="lead" style="font-size:14px;margin-top:10px">
+              Typically: fix technical issues, improve local signals, upgrade money pages for intent + conversion, then expand topical authority with AI-friendly answers and supporting pages.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 border-t border-white/10">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 shadow-soft">
+    <footer class="section" style="padding-top:24px">
+      <div class="wrap">
+        <div class="card p24 footerCta">
           <div>
-            <p class="text-white font-semibold text-xl">Want a plan that wins rankings + AI visibility?</p>
-            <p class="mt-1 text-slate-300">Talk with Boston SEO Services about AI-First SEO for your personal injury firm.</p>
+            <div style="font-weight:900;font-size:20px">Want a plan that wins rankings + AI visibility?</div>
+            <div style="margin-top:6px;color:var(--muted)">Talk with Boston SEO Services about AI-First SEO for your personal injury firm.</div>
           </div>
-          <div class="flex flex-col sm:flex-row gap-3">
-            <a href="https://calendly.com/222/15-minute-meeting" class="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-slate-950 hover:bg-emerald-400 focus-ring shadow-soft">
-              Book a strategy session
-            </a>
-            <a href="#audit" class="inline-flex items-center justify-center rounded-2xl bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-400 focus-ring shadow-soft">
-              Get free audit
-            </a>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn green" href="https://calendly.com/222/15-minute-meeting">Book a strategy session</a>
+            <a class="btn primary" href="#audit">Get free audit</a>
           </div>
         </div>
 
-        <div class="mt-8 text-xs text-slate-500">
-          <p>© <span id="year"></span> Boston SEO Services, LLC. All rights reserved.</p>
+        <div class="small" style="margin-top:16px;color:rgba(233,238,252,.50)">
+          © <span id="year"></span> Boston SEO Services, LLC. All rights reserved.
         </div>
       </div>
     </footer>
   </main>
 
-  <!-- Tiny JS (no tracking) -->
   <script>
     (function () {
       var y = document.getElementById('year');
@@ -556,187 +579,39 @@
         btn.addEventListener('click', function () {
           var isOpen = btn.getAttribute('aria-expanded') === 'true';
           btn.setAttribute('aria-expanded', String(!isOpen));
-          menu.classList.toggle('hidden');
+          menu.style.display = isOpen ? 'none' : 'block';
         });
       }
     })();
   </script>
 
-  <!-- ✅ Fully optimized JSON-LD schema -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://bostonseoservices.org/#website",
-        "url": "https://bostonseoservices.org/",
-        "name": "Boston SEO Services",
-        "publisher": { "@id": "https://bostonseoservices.org/#organization" },
-        "inLanguage": "en"
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"WebSite","@id":"https://bostonseoservices.org/#website","url":"https://bostonseoservices.org/","name":"Boston SEO Services","publisher":{"@id":"https://bostonseoservices.org/#organization"},"inLanguage":"en"},
+      {"@type":"WebPage","@id":"https://bostonseoservices.org/personal-injury-lawyer-seo-company#webpage","url":"https://bostonseoservices.org/personal-injury-lawyer-seo-company","name":"Personal Injury Lawyer SEO Company | Boston SEO Services","description":"Personal Injury Lawyer SEO Company specializing in AI-First SEO (AEO + GEO), local map pack rankings, and conversion-focused strategies to help law firms win more consultations and signed cases.","isPartOf":{"@id":"https://bostonseoservices.org/#website"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://images.groovetech.io/EQMbKzk-eYInZ5PrAqXYm1NVSEq0JOfLt8F4l4QE8M0/rs:fit:1200:630:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNzE2NDc5NjcyX1NjcmVlbnNob3QyMDI0MDUyMzExNTQxMS5wbmc.webp","width":1200,"height":630},"inLanguage":"en","datePublished":"2025-07-29","dateModified":"2026-02-25","breadcrumb":{"@id":"https://bostonseoservices.org/personal-injury-lawyer-seo-company#breadcrumb"},"mainEntity":{"@id":"https://bostonseoservices.org/personal-injury-lawyer-seo-company#faq"}},
+      {"@type":"BreadcrumbList","@id":"https://bostonseoservices.org/personal-injury-lawyer-seo-company#breadcrumb","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://bostonseoservices.org/"},
+        {"@type":"ListItem","position":2,"name":"Personal Injury Lawyer SEO Company","item":"https://bostonseoservices.org/personal-injury-lawyer-seo-company"}
+      ]},
+      {"@type":"Organization","@id":"https://bostonseoservices.org/#organization","name":"Boston SEO Services, LLC","url":"https://bostonseoservices.org/","sameAs":["https://www.facebook.com/Boston.SEO.Service/","https://www.linkedin.com/company/boston-seo","https://www.linkedin.com/in/williamsmithseo"]},
+      {"@type":"LocalBusiness","@id":"https://bostonseoservices.org/#localbusiness","name":"Boston SEO Services, LLC","url":"https://bostonseoservices.org/","telephone":"+1-508-561-8276","email":"wsmith@bostonseoservices.org",
+        "address":{"@type":"PostalAddress","streetAddress":"30 Newbury St, 3rd Floor","addressLocality":"Boston","addressRegion":"MA","postalCode":"02116","addressCountry":"US"},
+        "geo":{"@type":"GeoCoordinates","latitude":42.3520671,"longitude":-71.0726186},
+        "sameAs":["https://www.google.com/maps/place/Boston+SEO+Services+%26+Website+Design"],
+        "parentOrganization":{"@id":"https://bostonseoservices.org/#organization"}
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://bostonseoservices.org/personal-injury-lawyer-seo-company#webpage",
-        "url": "https://bostonseoservices.org/personal-injury-lawyer-seo-company",
-        "name": "Personal Injury Lawyer SEO Company | Boston SEO Services",
-        "description": "Personal Injury Lawyer SEO Company specializing in AI-First SEO (AEO + GEO), local 3-Pack rankings, and conversion-focused strategies that help law firms win more consultations and signed cases.",
-        "isPartOf": { "@id": "https://bostonseoservices.org/#website" },
-        "about": { "@id": "https://bostonseoservices.org/#service" },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "@id": "https://bostonseoservices.org/personal-injury-lawyer-seo-company#primaryimage",
-          "url": "https://images.groovetech.io/EQMbKzk-eYInZ5PrAqXYm1NVSEq0JOfLt8F4l4QE8M0/rs:fit:1200:630:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNzE2NDc5NjcyX1NjcmVlbnNob3QyMDI0MDUyMzExNTQxMS5wbmc.webp",
-          "width": 1200,
-          "height": 630,
-          "caption": "AI-First SEO for personal injury lawyers"
-        },
-        "inLanguage": "en",
-        "datePublished": "2025-07-29",
-        "dateModified": "2026-02-25",
-        "breadcrumb": { "@id": "https://bostonseoservices.org/personal-injury-lawyer-seo-company#breadcrumb" },
-        "mainEntity": { "@id": "https://bostonseoservices.org/personal-injury-lawyer-seo-company#faq" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://bostonseoservices.org/personal-injury-lawyer-seo-company#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bostonseoservices.org/" },
-          { "@type": "ListItem", "position": 2, "name": "Personal Injury Lawyer SEO Company", "item": "https://bostonseoservices.org/personal-injury-lawyer-seo-company" }
-        ]
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://bostonseoservices.org/#organization",
-        "name": "Boston SEO Services, LLC",
-        "url": "https://bostonseoservices.org/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://images.groovetech.io/w6GrHDwsG4HJ3wW3oF9WMSoewshX3oPsqV2_6MWBAPs/rs:fit:0:0:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNjIyODE0NTg1X2Jvc3Rvbi1zZW8tc2VydmljZXMtbG9nbyUyMDI2MHgyNjAuanBnLmpwZw.webp"
-        },
-        "sameAs": [
-          "https://www.facebook.com/Boston.SEO.Service/",
-          "https://www.linkedin.com/company/boston-seo",
-          "https://www.linkedin.com/in/williamsmithseo"
-        ]
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://bostonseoservices.org/#localbusiness",
-        "name": "Boston SEO Services, LLC",
-        "url": "https://bostonseoservices.org/",
-        "image": "https://images.groovetech.io/w6GrHDwsG4HJ3wW3oF9WMSoewshX3oPsqV2_6MWBAPs/rs:fit:0:0:0/g:no/aHR0cHM6Ly9hc3NldHMuZ3Jvb3ZlYXBwcy5jb20vaW1hZ2VzLzVlNjEzMmJjODQ5OTE2MGRjMmNkYjBlNC8xNjIyODE0NTg1X2Jvc3Rvbi1zZW8tc2VydmljZXMtbG9nbyUyMDI2MHgyNjAuanBnLmpwZw.webp",
-        "telephone": "+1-508-561-8276",
-        "email": "wsmith@bostonseoservices.org",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "30 Newbury St, 3rd Floor",
-          "addressLocality": "Boston",
-          "addressRegion": "MA",
-          "postalCode": "02116",
-          "addressCountry": "US"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": 42.3520671, "longitude": -71.0726186 },
-        "sameAs": [
-          "https://www.google.com/maps/place/Boston+SEO+Services+%26+Website+Design"
-        ],
-        "parentOrganization": { "@id": "https://bostonseoservices.org/#organization" }
-      },
-      {
-        "@type": "Person",
-        "@id": "https://bostonseoservices.org/#person",
-        "name": "Bill Smith",
-        "url": "https://bostonseoservices.org/bill-smith",
-        "worksFor": { "@id": "https://bostonseoservices.org/#organization" },
-        "sameAs": [
-          "https://www.linkedin.com/in/williamsmithseo"
-        ]
-      },
-      {
-        "@type": "Service",
-        "@id": "https://bostonseoservices.org/#service",
-        "name": "AI-First SEO for Personal Injury Lawyers",
-        "serviceType": "Search Engine Optimization (SEO), Answer Engine Optimization (AEO), Generative Engine Optimization (GEO)",
-        "provider": { "@id": "https://bostonseoservices.org/#localbusiness" },
-        "areaServed": { "@type": "Country", "name": "United States" },
-        "audience": { "@type": "Audience", "audienceType": "Personal injury law firms and attorneys" },
-        "url": "https://bostonseoservices.org/personal-injury-lawyer-seo-company",
-        "description": "AI-First SEO services for personal injury law firms focused on rankings, local visibility, and AI-generated answer presence (AEO/GEO) to drive consultations and signed cases."
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://bostonseoservices.org/personal-injury-lawyer-seo-company#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is AI-First SEO for a personal injury law firm?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "AI-First SEO improves visibility in traditional search (Google rankings + Maps) and in AI-generated answers by structuring content, strengthening authority signals, and adding schema so systems can understand and cite your firm accurately."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does AEO help a PI firm get more consultations?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "AEO focuses on clear, direct answers to high-intent questions. When AI tools summarize and reference your content, prospects trust you earlier and convert faster."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do I still need traditional SEO if we’re optimizing for AI?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. AI visibility works best when your traditional foundation is strong: fast pages, solid practice area coverage, local signals, and clean technical SEO. AI-First SEO adds structure and authority layers on top."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What practice areas benefit most from AI-first content?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Car accidents, truck accidents, motorcycle accidents, slip and fall, wrongful death, and premises liability benefit because prospects search questions and next steps before contacting a lawyer."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you improve local map pack visibility for PI?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We reinforce Google Business Profile relevance, strengthen review signals, improve citation consistency (NAP), and align location content with real search intent."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What’s the fastest way to see progress?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Usually: tighten technical issues, improve local signals, and upgrade key money pages to match intent with a conversion-first layout—then expand topical authority with AI-friendly answers and supporting pages."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "VideoObject",
-        "@id": "https://bostonseoservices.org/personal-injury-lawyer-seo-company#video",
-        "name": "Law Firm SEO - Personal Injury",
-        "description": "A short walkthrough of modern AI-first SEO for personal injury law firms: rankings, local visibility, and AI-generated answers.",
-        "uploadDate": "2024-12-30",
-        "duration": "PT3M28S",
-        "embedUrl": "https://www.youtube.com/embed/s5rtCgui854",
-        "contentUrl": "https://www.youtube.com/watch?v=s5rtCgui854",
-        "publisher": { "@id": "https://bostonseoservices.org/#organization" }
-      }
+      {"@type":"Service","@id":"https://bostonseoservices.org/#service","name":"AI-First SEO for Personal Injury Lawyers","serviceType":"Search Engine Optimization (SEO), Answer Engine Optimization (AEO), Generative Engine Optimization (GEO)","provider":{"@id":"https://bostonseoservices.org/#localbusiness"},"areaServed":{"@type":"Country","name":"United States"},"audience":{"@type":"Audience","audienceType":"Personal injury law firms and attorneys"},"url":"https://bostonseoservices.org/personal-injury-lawyer-seo-company"},
+      {"@type":"FAQPage","@id":"https://bostonseoservices.org/personal-injury-lawyer-seo-company#faq","mainEntity":[
+        {"@type":"Question","name":"What is AI-First SEO for a personal injury law firm?","acceptedAnswer":{"@type":"Answer","text":"AI-First SEO improves visibility in traditional search (Google rankings + Maps) and in AI-generated answers by structuring content, strengthening authority signals, and adding schema so systems can understand and cite your firm accurately."}},
+        {"@type":"Question","name":"How does AEO help a PI firm get more consultations?","acceptedAnswer":{"@type":"Answer","text":"AEO focuses on clear answers to high-intent questions. When AI tools summarize and reference your content, prospects trust you earlier and convert faster."}},
+        {"@type":"Question","name":"Do I still need traditional SEO if we’re optimizing for AI?","acceptedAnswer":{"@type":"Answer","text":"Yes. AI visibility works best when your foundation is strong: fast pages, solid practice area coverage, local signals, and clean technical SEO."}},
+        {"@type":"Question","name":"What’s the fastest way to see progress?","acceptedAnswer":{"@type":"Answer","text":"Typically: fix technical issues, improve local signals, upgrade money pages for intent + conversion, then expand topical authority with AI-friendly answers and supporting pages."}}
+      ]},
+      {"@type":"VideoObject","@id":"https://bostonseoservices.org/personal-injury-lawyer-seo-company#video","name":"Law Firm SEO - Personal Injury","description":"A short walkthrough of modern AI-first SEO for personal injury law firms: rankings, local visibility, and AI-generated answers.","uploadDate":"2024-12-30","duration":"PT3M28S","embedUrl":"https://www.youtube.com/embed/s5rtCgui854","contentUrl":"https://www.youtube.com/watch?v=s5rtCgui854","publisher":{"@id":"https://bostonseoservices.org/#organization"}}
     ]
   }
   </script>
-
-  <!-- Optional AI-only anchors (invisible, clean) -->
-  <div style="display:none;" aria-hidden="true">
-    Primary topic: AI-First SEO for personal injury lawyers (AEO + GEO).
-    Secondary topics: local SEO for PI firms, practice area SEO, conversion optimization for PI leads, schema for AI visibility.
-    User intent: hire a personal injury lawyer SEO company; understand AI-first SEO; request a free audit.
-  </div>
 </body>
 </html>
