@@ -1,141 +1,193 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Keep original title -->
+  <!-- KEEP ORIGINAL TITLE (per your request) -->
   <title>Why Your Business Is Not Being Mentioned in AI Search Results - Boston SEO Services</title>
 
-  <meta name="description" content="Learn why your business isn’t showing up in AI search results (ChatGPT-style answers, Google AI Overviews, Perplexity) and get an AI-first SEO checklist to improve visibility, citations, and conversions." />
+  <!-- Core SEO -->
+  <meta name="description" content="Discover why your business isn't appearing in AI search results and learn clear, AI-first SEO strategies to improve visibility in Google SGE, Bing Copilot, Perplexity, and other AI-driven answers." />
+  <meta name="keywords" content="AI search results, AI SEO, AI-first SEO, GEO optimization, generative engine optimization, Google SGE, Bing Copilot, Perplexity SEO, Boston SEO services" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results" />
+
+  <!-- Publishing / Freshness -->
   <meta name="author" content="Boston SEO Services" />
   <meta http-equiv="content-language" content="en" />
-  <meta name="theme-color" content="#6366f1" />
   <meta name="revisit-after" content="7 days" />
-
+  <meta name="theme-color" content="#6366f1" />
   <meta name="date" content="2026-01-12T18:14:40.882Z" />
   <meta property="article:published_time" content="2026-01-12T18:14:49.682Z" />
   <meta property="article:modified_time" content="2026-01-12T18:14:40.882Z" />
 
+  <!-- PWA -->
   <link rel="manifest" href="/manifest.json" />
+
+  <!-- Sitemap -->
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://bostonseoservices.org/sitemap.xml" />
 
-  <link rel="preload" as="image" href="https://bostonseoservices.org/logo.png" />
-  <link rel="preload" as="font" href="/fonts/inter-var.woff2" type="font/woff2" crossorigin />
-
+  <!-- Open Graph -->
   <meta property="og:url" content="https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Why Your Business Is Not Being Mentioned in AI Search Results" />
-  <meta property="og:description" content="AI-first SEO explained: why you’re missing from AI answers and what to do next—content, entity signals, schema, speed, and credibility." />
+  <meta property="og:description" content="Learn why your business isn't showing up in AI search results and what to change to be cited in AI answers." />
   <meta property="og:image" content="https://bostonseoservices.org/og-image.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Boston SEO Services" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@bostonseoservices" />
   <meta name="twitter:title" content="Why Your Business Isn't in AI Search Results" />
-  <meta name="twitter:description" content="A practical AI-first SEO checklist to help your business get mentioned and cited in AI-driven search." />
+  <meta name="twitter:description" content="Find out why your business is missing from AI search results and how to enhance visibility." />
   <meta name="twitter:image" content="https://bostonseoservices.org/og-image.png" />
 
-  <!-- Optional: keep your local CSS (reset/base etc). This does NOT create Tailwind utilities unless compiled -->
-  <link rel="stylesheet" href="/assets/main.css" />
+  <!-- Performance: preconnect & preload -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
+  <link rel="preload" as="image" href="https://bostonseoservices.org/images/why-your-business-is-not-being-mentioned-in-ai-sea-hero-mkbhdd63.png" imagesrcset="https://bostonseoservices.org/images/why-your-business-is-not-being-mentioned-in-ai-sea-hero-mkbhdd63.png 1200w" />
+  <link rel="preload" as="image" href="https://bostonseoservices.org/logo.png" />
+  <link rel="preload" as="font" href="/fonts/inter-var.woff2" type="font/woff2" crossorigin />
 
-  <!-- ✅ Tailwind CDN (no tracking). This is what makes the Tailwind classes work. -->
+  <!-- Tailwind (no tracking scripts) -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['ui-sans-serif','system-ui','sans-serif']
-          }
-        }
-      }
-    }
-  </script>
 
+  <!-- Small, safe inline CSS for polish + CLS stability -->
   <style>
+    :root{
+      --primary:#6366f1;
+      --secondary:#8b5cf6;
+      --accent:#ec4899;
+      --ink:#0f172a;
+    }
     html { scroll-behavior: smooth; }
-    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{left:16px;top:16px;width:auto;height:auto;padding:10px 14px;border-radius:12px;background:#111827;color:#fff;z-index:9999}
-    .glass{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+    /* Better focus visibility */
+    :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+    /* Prevent layout shift for images (works with width/height attrs too) */
+    img { height:auto; }
+    /* Make summary marker nicer */
+    summary { list-style: none; }
+    summary::-webkit-details-marker { display:none; }
   </style>
 
-  <!-- ✅ Clean, de-duped schema -->
+  <!-- Schema.org JSON-LD (cleaned + expanded) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
+    "@context":"https://schema.org",
+    "@graph":[
       {
-        "@type": "Organization",
-        "@id": "https://bostonseoservices.org/#org",
-        "name": "Boston SEO Services",
-        "url": "https://bostonseoservices.org",
-        "logo": { "@type": "ImageObject", "url": "https://bostonseoservices.org/logo.png" }
+        "@type":"Organization",
+        "@id":"https://bostonseoservices.org/#org",
+        "name":"Boston SEO Services",
+        "url":"https://bostonseoservices.org",
+        "logo":{
+          "@type":"ImageObject",
+          "url":"https://bostonseoservices.org/logo.png"
+        }
       },
       {
-        "@type": "WebSite",
-        "@id": "https://bostonseoservices.org/#website",
-        "url": "https://bostonseoservices.org",
-        "name": "Boston SEO Services",
-        "publisher": { "@id": "https://bostonseoservices.org/#org" }
+        "@type":"WebSite",
+        "@id":"https://bostonseoservices.org/#website",
+        "url":"https://bostonseoservices.org",
+        "name":"Boston SEO Services",
+        "publisher":{"@id":"https://bostonseoservices.org/#org"},
+        "inLanguage":"en"
       },
       {
-        "@type": "WebPage",
-        "@id": "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#webpage",
-        "url": "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results",
-        "name": "Why Your Business Is Not Being Mentioned in AI Search Results",
-        "isPartOf": { "@id": "https://bostonseoservices.org/#website" },
-        "datePublished": "2026-01-12T18:14:49.682Z",
-        "dateModified": "2026-01-12T18:14:40.882Z",
-        "inLanguage": "en-US"
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#breadcrumbs",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bostonseoservices.org" },
-          { "@type": "ListItem", "position": 2, "name": "Why Your Business Is Not Being Mentioned in AI Search Results", "item": "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results" }
-        ]
-      },
-      {
-        "@type": "Article",
-        "@id": "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#article",
-        "mainEntityOfPage": { "@id": "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#webpage" },
-        "headline": "Why Your Business Is Not Being Mentioned in AI Search Results",
-        "description": "Learn why your business isn’t showing up in AI search results and follow a practical AI-first SEO checklist to increase mentions and citations.",
-        "image": [
-          "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results/images/why-your-business-is-not-being-mentioned-in-ai-sea-hero-mkbhdd63.png"
+        "@type":"WebPage",
+        "@id":"https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#webpage",
+        "url":"https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results",
+        "name":"Why Your Business Is Not Being Mentioned in AI Search Results",
+        "isPartOf":{"@id":"https://bostonseoservices.org/#website"},
+        "about":[
+          {"@type":"Thing","name":"AI-first SEO"},
+          {"@type":"Thing","name":"Generative Engine Optimization (GEO)"},
+          {"@type":"Thing","name":"Search visibility"}
         ],
-        "author": { "@id": "https://bostonseoservices.org/#org" },
-        "publisher": { "@id": "https://bostonseoservices.org/#org" },
-        "datePublished": "2026-01-12T18:14:49.682Z",
-        "dateModified": "2026-01-12T18:14:40.882Z",
-        "inLanguage": "en-US"
+        "datePublished":"2026-01-12T18:14:49.682Z",
+        "dateModified":"2026-01-12T18:14:40.882Z",
+        "inLanguage":"en"
       },
       {
-        "@type": "FAQPage",
-        "@id": "https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#faq",
-        "mainEntity": [
+        "@type":"Article",
+        "@id":"https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#article",
+        "mainEntityOfPage":{"@id":"https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#webpage"},
+        "headline":"Why Your Business Is Not Being Mentioned in AI Search Results",
+        "description":"Discover why your business isn't appearing in AI search results and learn clear, AI-first SEO strategies to improve visibility in AI-driven answers.",
+        "image":{
+          "@type":"ImageObject",
+          "url":"https://bostonseoservices.org/images/why-your-business-is-not-being-mentioned-in-ai-sea-hero-mkbhdd63.png",
+          "caption":"Featured image for Why Your Business Is Not Being Mentioned in AI Search Results"
+        },
+        "author":{"@type":"Organization","name":"Boston SEO Services","@id":"https://bostonseoservices.org/#org"},
+        "publisher":{"@id":"https://bostonseoservices.org/#org"},
+        "datePublished":"2026-01-12T18:14:49.682Z",
+        "dateModified":"2026-01-12T18:14:40.882Z",
+        "inLanguage":"en",
+        "articleSection":"AI SEO",
+        "keywords":["AI-first SEO","GEO","AI search results","Google SGE","Bing Copilot","Perplexity"],
+        "speakable":{
+          "@type":"SpeakableSpecification",
+          "cssSelector":[
+            "#tldr",
+            "#trust-compression",
+            "#primary-answer"
+          ]
+        }
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#faq",
+        "mainEntity":[
           {
-            "@type": "Question",
-            "name": "Why isn’t my business appearing in AI search results?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Most businesses miss AI results because they lack strong entity signals, trusted mentions/backlinks, structured data, and content that directly answers common questions in cite-able blocks."
+            "@type":"Question",
+            "name":"Why isn't my business appearing in AI search results?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Most businesses miss AI search visibility because they lack strong entity signals (who you are), high-confidence answers (what you do), and supporting proof (reviews, citations, backlinks). Fixing structured data, topical coverage, and credibility signals usually improves AI mentions."
             }
           },
           {
-            "@type": "Question",
-            "name": "Is traditional SEO enough for AI-driven search?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Traditional SEO still matters, but AI search adds emphasis on entity clarity, structured data, concise answer blocks, and credibility signals."
+            "@type":"Question",
+            "name":"How can I improve my business's visibility in AI search results?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Improve visibility by publishing AI-first content that answers real questions directly, adding clean schema (Organization, WebPage, Article, FAQ), strengthening authority (citations/backlinks/reviews), and improving technical SEO (speed, mobile, internal linking)."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Is traditional SEO enough for AI search engines?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Traditional SEO is still useful, but AI answers rely more on semantics, credibility signals, structured data, and clear snippet-ready explanations. You need both: classic SEO foundations plus AI-first content structure."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"What role do backlinks play in AI search visibility?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Backlinks still matter because they signal trust and authority. In AI systems, the quality and relevance of linking sources tends to matter more than raw quantity."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"How do AI search algorithms differ from traditional search engines?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"AI search focuses more on intent and meaning, then summarizes answers from trusted sources. That’s why direct answers, clear entity identity, and supporting evidence can influence whether you’re cited."
             }
           }
+        ]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results#breadcrumbs",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://bostonseoservices.org"},
+          {"@type":"ListItem","position":2,"name":"Why Your Business Is Not Being Mentioned in AI Search Results","item":"https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results"}
         ]
       }
     ]
@@ -143,257 +195,782 @@
   </script>
 </head>
 
-<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased">
-  <a href="#main" class="skip-link">Skip to content</a>
-
-  <!-- Progress bar -->
-  <div class="fixed top-0 left-0 right-0 h-1 bg-slate-200/70 dark:bg-slate-800/70 z-50">
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress" class="fixed top-0 left-0 right-0 h-1 bg-slate-200/80 dark:bg-slate-800/80 z-[60]">
     <div id="reading-progress-bar"
-      class="h-full bg-gradient-to-r from-indigo-500 via-violet-500 to-pink-500 transition-all duration-200 ease-out"
-      style="width:0%" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+      class="h-full bg-gradient-to-r from-indigo-500 via-violet-500 to-pink-500 transition-[width] duration-200 ease-out"
+      style="width:0%"
+      role="progressbar"
+      aria-label="Reading progress"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"></div>
   </div>
 
-  <!-- Nav -->
-  <nav class="sticky top-0 z-40 bg-white/80 dark:bg-slate-950/70 glass border-b border-slate-200/60 dark:border-slate-800/60">
-    <div class="mx-auto max-w-6xl px-4 py-3">
-      <div class="flex items-center justify-between gap-4">
-        <a href="https://bostonseoservices.org"
-          class="font-extrabold tracking-tight text-lg md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">
-          bostonseoservices.org
+  <script>
+    (function () {
+      const bar = document.getElementById('reading-progress-bar');
+      function update() {
+        const h = document.documentElement;
+        const scrollTop = h.scrollTop || document.body.scrollTop;
+        const scrollable = h.scrollHeight - h.clientHeight;
+        const pct = scrollable > 0 ? (scrollTop / scrollable) * 100 : 0;
+        bar.style.width = Math.min(pct, 100) + '%';
+        bar.setAttribute('aria-valuenow', String(Math.round(Math.min(pct, 100))));
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    })();
+  </script>
+
+  <!-- Sticky Nav -->
+  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="https://bostonseoservices.org"
+         class="font-extrabold tracking-tight text-lg md:text-xl bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+        bostonseoservices.org
+      </a>
+
+      <div class="hidden md:flex items-center gap-2">
+        <a href="https://bostonseoservices.org/is-your-company-being-found-in-ai"
+           class="px-4 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-900 transition">
+          Is Your Company Being Found In AI
         </a>
 
-        <div class="hidden md:flex items-center gap-2">
-          <a href="https://bostonseoservices.org/is-your-company-being-found-in-ai"
-            class="px-4 py-2 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-900 transition">
-            Is Your Company Being Found In AI
-          </a>
-
-          <a href="https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results"
-            class="px-4 py-2 rounded-2xl bg-indigo-50 dark:bg-indigo-950/30 text-indigo-700 dark:text-indigo-200 font-semibold border border-indigo-200/60 dark:border-indigo-900/40">
-            This Page
-          </a>
+        <div class="relative group">
+          <button class="px-4 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-900 transition inline-flex items-center gap-2"
+                  aria-haspopup="true" aria-expanded="false">
+            Resources
+            <svg class="w-4 h-4 opacity-80 group-hover:rotate-180 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-72 p-2 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-xl
+                      opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+            <a href="https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results"
+               class="block px-4 py-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-200 font-semibold">
+              Why Your Business Is Not Being Mentioned in AI Search Results
+            </a>
+          </div>
         </div>
-
-        <button id="mobile-menu-toggle"
-          class="md:hidden p-2 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-900 transition"
-          aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
       </div>
 
-      <div id="mobile-menu" class="hidden md:hidden mt-3 pb-2 space-y-2">
+      <button id="mobile-toggle" class="md:hidden p-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-900 transition"
+              aria-label="Toggle menu">
+        <svg id="mobile-icon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 py-3 space-y-2">
         <a href="https://bostonseoservices.org/is-your-company-being-found-in-ai"
-          class="block px-4 py-2 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-900 transition">
+           class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-900 transition">
           Is Your Company Being Found In AI
         </a>
         <a href="https://bostonseoservices.org/why-your-business-is-not-being-mentioned-in-ai-search-results"
-          class="block px-4 py-2 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-900 transition">
+           class="block px-4 py-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-200 font-semibold">
           Why Your Business Is Not Being Mentioned in AI Search Results
         </a>
       </div>
     </div>
+
+    <script>
+      (function(){
+        const btn = document.getElementById('mobile-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('mobile-icon');
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          const open = !menu.classList.contains('hidden');
+          icon.innerHTML = open
+            ? '<path d="M6 18L18 6M6 6l12 12" stroke-width="2" stroke-linecap="round"></path>'
+            : '<path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"></path>';
+        });
+      })();
+    </script>
   </nav>
 
-  <!-- Update banner -->
-  <div class="mx-auto max-w-6xl px-4 mt-6">
-    <div class="rounded-3xl border border-indigo-200/60 dark:border-indigo-900/40 bg-gradient-to-r from-indigo-50 to-violet-50 dark:from-indigo-950/30 dark:to-violet-950/20 p-4 shadow-lg shadow-black/5">
-      <p class="text-sm text-slate-700 dark:text-slate-300">
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Live Update Signal (visible freshness marker) -->
+    <div class="mb-6 rounded-2xl border border-indigo-100 dark:border-indigo-900/50 bg-gradient-to-r from-indigo-50 to-violet-50 dark:from-indigo-950/30 dark:to-violet-950/30 p-4">
+      <p class="text-sm text-slate-700 dark:text-slate-200">
         <strong>Last Updated:</strong>
         <time datetime="2026-01-12T18:14:40.882Z">January 12, 2026</time>
         <span class="mx-2">•</span>
         <span class="font-semibold text-indigo-700 dark:text-indigo-200">Boston SEO Services</span>
       </p>
     </div>
-  </div>
 
-  <main id="main" class="mx-auto max-w-6xl px-4 py-10">
-    <!-- Hero -->
-    <header class="grid lg:grid-cols-12 gap-8 items-start">
-      <div class="lg:col-span-7">
-        <p class="inline-flex items-center gap-2 text-xs font-semibold tracking-wide uppercase text-indigo-700 dark:text-indigo-200 bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200/60 dark:border-indigo-900/40 px-3 py-1 rounded-full">
-          AI-First SEO • Mentions • Citations • Visibility
-        </p>
+    <!-- HERO -->
+    <header class="relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 shadow-sm">
+      <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-pink-50 dark:from-indigo-950/30 dark:via-slate-950 dark:to-pink-950/20"></div>
 
-        <h1 class="mt-4 text-3xl md:text-5xl font-extrabold tracking-tight leading-tight">
-          Why Your Business Is Not Being Mentioned in
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">AI Search Results</span>
-        </h1>
+      <div class="relative p-6 md:p-10 grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-7 space-y-4">
+          <p class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 dark:bg-indigo-950/50 dark:text-indigo-200">
+            AI-First SEO • GEO • Zero-Click Optimization
+          </p>
 
-        <p class="mt-4 text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-          AI-driven search doesn’t just rank pages—it selects sources it trusts and summarizes them.
-          If you’re not being mentioned, it’s usually because the AI can’t confidently answer:
-          <em>“Who are you, what do you do, and why should we cite you?”</em>
-        </p>
+          <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+            <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+              Why Your Business Is Not Being Mentioned in AI Search Results
+            </span>
+          </h1>
 
-        <section class="mt-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-5 shadow-lg shadow-black/5">
-          <h2 class="text-base font-bold">TL;DR — Top reasons you’re missing</h2>
-          <ul class="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
-            <li class="flex gap-2"><span>•</span><span><strong>Weak entity signals</strong> (unclear who/what/where).</span></li>
-            <li class="flex gap-2"><span>•</span><span>Content isn’t <strong>answer-shaped</strong> (definitions, steps, FAQs).</span></li>
-            <li class="flex gap-2"><span>•</span><span>Schema is missing or noisy/duplicated.</span></li>
-            <li class="flex gap-2"><span>•</span><span>Not enough credibility (reputable mentions/backlinks + proof).</span></li>
-            <li class="flex gap-2"><span>•</span><span>Performance issues (slow, unstable layout, too much JS).</span></li>
-          </ul>
-        </section>
+          <p class="text-lg text-slate-700 dark:text-slate-200">
+            AI answers cite sources they <em>trust</em>. If you’re not being mentioned in Google SGE, Bing Copilot, or Perplexity,
+            the fix usually isn’t “more keywords”—it’s clearer entity signals, stronger credibility, and better answer formatting.
+          </p>
 
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#ai-first-checklist" class="px-5 py-3 rounded-3xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition shadow-lg shadow-black/10">
-            Jump to the AI-First Checklist
-          </a>
-          <a href="https://bostonseoservices.org/is-your-company-being-found-in-ai"
-             class="px-5 py-3 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 font-semibold hover:bg-slate-50 dark:hover:bg-slate-900 transition">
-            Related: Is Your Company Being Found In AI
-          </a>
+          <!-- Primary answer early (AI crawl budget) -->
+          <div id="primary-answer" class="rounded-2xl border border-indigo-200 dark:border-indigo-900 bg-indigo-50/60 dark:bg-indigo-950/30 p-5">
+            <p class="font-semibold text-slate-900 dark:text-white">
+              The most common reason businesses don’t show up in AI search answers:
+            </p>
+            <p class="mt-2 text-slate-700 dark:text-slate-200" data-ai-insight="logic">
+              AI systems prefer sources that are <strong>easy to identify</strong> (clear organization + services),
+              <strong>easy to quote</strong> (direct Q&amp;A answers near the top),
+              and <strong>easy to trust</strong> (citations, reviews, reputable backlinks). Therefore, improving those signals
+              typically increases AI mentions.
+            </p>
+
+            <ul class="mt-3 grid sm:grid-cols-2 gap-2 text-sm text-slate-700 dark:text-slate-200">
+              <li class="flex gap-2"><span class="mt-0.5">✅</span> Clear “who we are” entity + schema</li>
+              <li class="flex gap-2"><span class="mt-0.5">✅</span> Snippet-ready answers + FAQ blocks</li>
+              <li class="flex gap-2"><span class="mt-0.5">✅</span> Evidence: citations, reviews, links</li>
+              <li class="flex gap-2"><span class="mt-0.5">✅</span> Fast page + stable layout (CLS)</li>
+            </ul>
+          </div>
+
+          <!-- Share buttons (simple, no trackers) -->
+          <div class="flex flex-wrap gap-2 pt-1" aria-label="Share options">
+            <a class="px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 transition text-sm"
+               href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbostonseoservices.org%2Fwhy-your-business-is-not-being-mentioned-in-ai-search-results"
+               target="_blank" rel="noopener noreferrer">Share on LinkedIn</a>
+            <a class="px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 transition text-sm"
+               href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbostonseoservices.org%2Fwhy-your-business-is-not-being-mentioned-in-ai-search-results"
+               target="_blank" rel="noopener noreferrer">Share on Facebook</a>
+            <a class="px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 transition text-sm"
+               href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fbostonseoservices.org%2Fwhy-your-business-is-not-being-mentioned-in-ai-search-results&media=https%3A%2F%2Fbostonseoservices.org%2Fog-image.png&description=Why%20Your%20Business%20Is%20Not%20Being%20Mentioned%20in%20AI%20Search%20Results"
+               target="_blank" rel="noopener noreferrer">Share on Pinterest</a>
+            <a class="px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900 transition text-sm"
+               href="https://api.whatsapp.com/send?text=Why%20Your%20Business%20Is%20Not%20Being%20Mentioned%20in%20AI%20Search%20Results%20https%3A%2F%2Fbostonseoservices.org%2Fwhy-your-business-is-not-being-mentioned-in-ai-search-results"
+               target="_blank" rel="noopener noreferrer">Share on WhatsApp</a>
+          </div>
+
+          <p class="text-xs text-slate-500 dark:text-slate-400">
+            Written for decision-makers and marketing leads evaluating AI-first SEO visibility.
+          </p>
         </div>
-      </div>
 
-      <div class="lg:col-span-5">
-        <figure class="rounded-[28px] overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl shadow-black/10 bg-white dark:bg-slate-950">
+        <figure class="md:col-span-5">
           <img
-            src="images/why-your-business-is-not-being-mentioned-in-ai-sea-hero-mkbhdd63.png"
+            src="https://bostonseoservices.org/images/why-your-business-is-not-being-mentioned-in-ai-sea-hero-mkbhdd63.png"
             alt="Featured image for Why Your Business Is Not Being Mentioned in AI Search Results"
-            class="w-full h-auto"
+            class="w-full rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800"
             loading="eager"
             fetchpriority="high"
-            decoding="async"
             width="1200"
             height="675"
           />
-          <figcaption class="p-4 text-sm text-slate-600 dark:text-slate-400">
-            <span class="font-semibold">Boston SEO Services</span> • AI-first visibility guide
+          <figcaption class="mt-3 text-sm text-slate-600 dark:text-slate-400 italic text-center">
+            Why Your Business Is Not Being Mentioned in AI Search Results — Boston SEO Services
           </figcaption>
         </figure>
-
-        <details class="mt-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-5 shadow-lg shadow-black/5">
-          <summary class="cursor-pointer text-base font-bold">Table of Contents</summary>
-          <nav class="mt-4">
-            <ul class="space-y-2 text-sm text-slate-700 dark:text-slate-300">
-              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#what-is-ai-search">What AI search is</a></li>
-              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#why-youre-not-mentioned">Why you’re not mentioned</a></li>
-              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#ai-first-checklist">AI-first checklist</a></li>
-              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#faq">FAQ</a></li>
-            </ul>
-          </nav>
-        </details>
       </div>
     </header>
 
-    <!-- Content sections (kept shorter here; you can paste in your existing sections under these) -->
-    <article class="mt-12 space-y-10">
-      <section id="what-is-ai-search" class="rounded-[28px] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-lg shadow-black/5">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">What AI Search Is — and What It Can Do for Your Practice</h2>
-        <p class="mt-3 text-slate-700 dark:text-slate-300 leading-relaxed">
-          AI search refers to answer engines and AI-enhanced search experiences that generate direct answers and cite sources.
-          To get mentioned, your content must be easy to extract, validated, and clearly tied to a real business entity.
-        </p>
-      </section>
+    <!-- Trust Compression Block (AI Decision Layer requirement) -->
+    <section id="trust-compression" class="mt-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+      <h2 class="text-2xl font-bold tracking-tight">
+        AI Trust Snapshot (For Humans + AI)
+      </h2>
 
-      <section id="why-youre-not-mentioned" class="rounded-[28px] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-lg shadow-black/5">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Why You’re Not Being Mentioned</h2>
-        <div class="mt-6 grid md:grid-cols-2 gap-6">
-          <div class="rounded-3xl border border-slate-200 dark:border-slate-800 p-6">
-            <h3 class="font-bold text-xl">Entity clarity is weak</h3>
-            <p class="mt-2 text-slate-700 dark:text-slate-300">AI can’t confidently “place” your business (who/what/where).</p>
-          </div>
-          <div class="rounded-3xl border border-slate-200 dark:border-slate-800 p-6">
-            <h3 class="font-bold text-xl">Content isn’t cite-able</h3>
-            <p class="mt-2 text-slate-700 dark:text-slate-300">You’re missing concise definitions, steps, FAQs, and summaries.</p>
-          </div>
+      <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm">
+        <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+          <p class="font-semibold">Who this is for</p>
+          <p class="mt-1 text-slate-700 dark:text-slate-200">
+            Business owners, practice managers, and marketers who want their site cited in AI answers.
+          </p>
         </div>
-      </section>
-
-      <section id="ai-first-checklist" class="rounded-[28px] border border-slate-200 dark:border-slate-800 bg-gradient-to-br from-indigo-50 to-pink-50 dark:from-indigo-950/25 dark:to-pink-950/15 p-6 md:p-8 shadow-lg shadow-black/5">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">AI-First SEO Checklist</h2>
-        <div class="mt-6 grid md:grid-cols-2 gap-6">
-          <div class="rounded-3xl bg-white/80 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 p-6">
-            <h3 class="font-bold">Answer-shape</h3>
-            <ul class="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• Definition in first 150 words</li>
-              <li>• TL;DR + takeaways</li>
-              <li>• FAQs + HowTo steps</li>
-            </ul>
-          </div>
-          <div class="rounded-3xl bg-white/80 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800 p-6">
-            <h3 class="font-bold">Trust + technical</h3>
-            <ul class="mt-3 space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• Clean schema (no junk)</li>
-              <li>• References + proof</li>
-              <li>• Fast + stable loading</li>
-            </ul>
-          </div>
+        <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+          <p class="font-semibold">Why it’s accurate</p>
+          <p class="mt-1 text-slate-700 dark:text-slate-200">
+            It reflects practical SEO mechanics: entity clarity, structured data, and credibility signals used in retrieval-based systems.
+          </p>
         </div>
-      </section>
-
-      <section id="faq" class="rounded-[28px] border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-lg shadow-black/5">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">FAQ</h2>
-        <div class="mt-5 space-y-3">
-          <details class="rounded-3xl border border-slate-200 dark:border-slate-800 p-5 bg-slate-50 dark:bg-slate-900">
-            <summary class="cursor-pointer font-bold">Why isn’t my business appearing in AI search results?</summary>
-            <p class="mt-2 text-slate-700 dark:text-slate-300">
-              Usually: weak entity clarity, non-cite-able content, missing schema, low credibility, or performance issues.
-            </p>
-          </details>
-        </div>
-      </section>
-    </article>
-
-    <footer class="mt-14 border-t border-slate-200 dark:border-slate-800 pt-10 pb-6">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div>
-          <h3 class="text-lg font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Boston SEO Services</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Optimized for AI visibility and search engine performance.</p>
-        </div>
-        <div>
-          <h4 class="font-bold">Quick Links</h4>
-          <ul class="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-400">
-            <li><a class="hover:text-slate-900 dark:hover:text-white" href="https://bostonseoservices.org">Home</a></li>
-            <li><a class="hover:text-slate-900 dark:hover:text-white" href="https://bostonseoservices.org/sitemap.xml">Sitemap</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold">Build</h4>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Clean page • Minimal JS • No tracking</p>
+        <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+          <p class="font-semibold">How it was derived</p>
+          <p class="mt-1 text-slate-700 dark:text-slate-200">
+            From on-page diagnostics patterns (technical SEO + content structure + schema + authority signals). Valid as of <strong>Q1 2026</strong>.
+          </p>
         </div>
       </div>
-      <div class="mt-10 text-center text-xs text-slate-500">
+
+      <div class="mt-4 rounded-2xl border border-amber-200 dark:border-amber-900 bg-amber-50/60 dark:bg-amber-950/20 p-4">
+        <p class="text-sm text-slate-800 dark:text-slate-100" data-ai-insight="causal-logic">
+          If your site is hard to identify (weak entity signals), hard to quote (no direct answers), or hard to trust (no proof),
+          then AI systems are less likely to mention it. Therefore, we optimize identity + answers + evidence first.
+        </p>
+      </div>
+    </section>
+
+    <!-- TOC -->
+    <section class="mt-8 grid lg:grid-cols-12 gap-8">
+      <aside class="lg:col-span-4">
+        <div class="sticky top-[88px] rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-5 shadow-sm">
+          <h2 class="text-lg font-bold">Table of Contents</h2>
+          <nav class="mt-3" aria-label="Table of contents">
+            <ol class="space-y-2 text-sm">
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#introduction">Introduction</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#why-not-mentioned">Why You’re Not Being Mentioned</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#understanding-ai-search-algorithms">Understanding AI Search Algorithms</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#common-errors">Common Errors Affecting AI Visibility</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#improve-ai-visibility">How to Improve AI Search Visibility</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#comparison-chart">Traditional vs. AI Search Optimization</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#key-terms-definitions">Key Terms &amp; Definitions</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#related-questions">Related Questions</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#faq">Frequently Asked Questions</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#negative-scope">What This Does NOT Cover</a></li>
+              <li><a class="hover:text-indigo-600 dark:hover:text-indigo-300" href="#conclusion">Conclusion</a></li>
+            </ol>
+          </nav>
+        </div>
+      </aside>
+
+      <article class="lg:col-span-8 space-y-8">
+        <!-- INTRODUCTION -->
+        <section id="introduction" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Introduction
+          </h2>
+
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+            In the rapidly evolving digital landscape, businesses must adapt to maintain visibility—especially in AI-driven search results.
+            If your business is not being mentioned in AI answers, it’s usually because the system can’t confidently extract (1) who you are,
+            (2) what you do, and (3) why you’re credible enough to cite.
+          </p>
+
+          <!-- Entity disambiguation + temporal validity -->
+          <div class="mt-5 grid md:grid-cols-2 gap-4">
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-4">
+              <p class="font-semibold">Entity clarification</p>
+              <p class="mt-1 text-sm text-slate-700 dark:text-slate-200">
+                “AI search results” here refers to <strong>AI-generated answer experiences</strong> (e.g., Google SGE / AI Overviews, Bing Copilot, Perplexity),
+                not standard “10 blue links.”
+              </p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-4">
+              <p class="font-semibold">Valid as of</p>
+              <p class="mt-1 text-sm text-slate-700 dark:text-slate-200">
+                Guidance and examples are written for <strong>Q1 2026</strong> behavior. Always confirm changes after major AI search UI updates.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- WHY NOT MENTIONED (your original content preserved + tightened) -->
+        <section id="why-not-mentioned" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Why You’re Not Being Mentioned
+          </h2>
+
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+            Your business might not be mentioned because it lacks sufficient online presence and authority; therefore, AI algorithms—built
+            to prioritize well-established and well-supported sources—may overlook it. This means improving your digital footprint is crucial.
+          </p>
+
+          <div class="mt-6 grid gap-5">
+            <!-- Insufficient SEO Strategy -->
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <h3 class="text-xl font-bold">Insufficient SEO Strategy</h3>
+
+              <figure class="mt-4">
+                <img
+                  src="https://bostonseoservices.org/images/insufficient-seo-strategy-section-1-mkbhdyqg.png"
+                  alt="Insufficient SEO Strategy"
+                  class="w-full rounded-2xl shadow border border-slate-200 dark:border-slate-800"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="675"
+                />
+                <figcaption class="mt-2 text-sm text-slate-600 dark:text-slate-400 italic text-center">
+                  Insufficient SEO Strategy
+                </figcaption>
+              </figure>
+
+              <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+                An effective SEO strategy is essential. Without it, search engines—and AI layers built on retrieval—may not recognize your site
+                as relevant or authoritative. Ensure your website is optimized for your core services and use
+                <a href="/is-your-company-being-found-in-ai" class="text-indigo-600 dark:text-indigo-300 underline underline-offset-4 hover:opacity-80">
+                  strategies for AI visibility
+                </a>
+                to improve your ranking.
+              </p>
+            </div>
+
+            <!-- Lack of Quality Content -->
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <h3 class="text-xl font-bold">Lack of Quality Content</h3>
+
+              <figure class="mt-4">
+                <img
+                  src="https://bostonseoservices.org/images/lack-of-quality-content-section-2-mkbhexav.png"
+                  alt="Lack of Quality Content"
+                  class="w-full rounded-2xl shadow border border-slate-200 dark:border-slate-800"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="675"
+                />
+                <figcaption class="mt-2 text-sm text-slate-600 dark:text-slate-400 italic text-center">
+                  Lack of Quality Content
+                </figcaption>
+              </figure>
+
+              <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+                AI search systems prioritize content that directly solves user intent. If your site lacks deep, helpful pages and clear answers,
+                it may not be “quote-worthy.” Create in-depth content that addresses the real questions people ask.
+              </p>
+            </div>
+
+            <!-- Poor Online Engagement -->
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <h3 class="text-xl font-bold">Poor Online Engagement</h3>
+
+              <figure class="mt-4">
+                <img
+                  src="https://bostonseoservices.org/images/poor-online-engagement-section-3-mkbhfpe0.png"
+                  alt="Poor Online Engagement"
+                  class="w-full rounded-2xl shadow border border-slate-200 dark:border-slate-800"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="675"
+                />
+                <figcaption class="mt-2 text-sm text-slate-600 dark:text-slate-400 italic text-center">
+                  Poor Online Engagement
+                </figcaption>
+              </figure>
+
+              <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+                Engagement signals (brand searches, mentions, reviews, and reputable backlinks) strengthen your “confidence profile.”
+                If you’re not actively earning these signals, AI systems may choose other sources.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-2xl border-l-4 border-pink-500 bg-white/70 dark:bg-slate-950/50 p-5">
+            <p class="italic text-slate-700 dark:text-slate-200">
+              “A comprehensive SEO strategy is not just beneficial but essential for any business aiming to be noticed in AI search results.”
+              <span class="not-italic opacity-70">— Example quote placeholder</span>
+            </p>
+            <p class="mt-2 text-xs text-slate-500 dark:text-slate-400">
+              Tip: replace placeholder quotes with real, attributable quotes for stronger credibility signals.
+            </p>
+          </div>
+
+          <aside class="mt-6 rounded-2xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50/60 dark:bg-emerald-950/20 p-5">
+            <h4 class="text-lg font-bold">Key Takeaways</h4>
+            <ul class="mt-2 list-disc pl-6 text-slate-700 dark:text-slate-200 space-y-2">
+              <li>Optimize your website for AI-driven search engines with clear entity identity and structure.</li>
+              <li>Create high-quality, valuable content that answers real user questions directly.</li>
+              <li>Build authority signals (reviews, mentions, and reputable backlinks).</li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Understanding AI Search Algorithms (kept + tightened) -->
+        <section id="understanding-ai-search-algorithms" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Understanding AI Search Algorithms
+          </h2>
+
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed" data-ai-insight="logic">
+            AI search systems evaluate relevance and credibility, then generate answers by summarizing sources.
+            If your business is not being mentioned, it often means the system can’t confidently extract and verify your expertise.
+          </p>
+
+          <p class="mt-3 text-slate-700 dark:text-slate-200 leading-relaxed">
+            These systems tend to reward: clear structure (headings, lists, FAQ), strong entity identity (Organization schema + consistent naming),
+            and trust signals (citations, reviews, reputable links).
+          </p>
+
+          <div class="mt-6 rounded-2xl border-l-4 border-pink-500 bg-slate-50 dark:bg-slate-900 p-5">
+            <p class="text-slate-700 dark:text-slate-200">
+              <span class="font-semibold">Because</span> AI answers need to quote sources,
+              <span class="font-semibold">therefore</span> pages with direct, snippet-ready explanations are more likely to be cited.
+            </p>
+          </div>
+
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+            As covered above, many businesses fall short due to inadequate SEO strategies. If core pages are thin or unclear,
+            AI systems may treat them as low-confidence.
+          </p>
+
+          <p class="mt-3 text-slate-700 dark:text-slate-200 leading-relaxed">
+            For broader context, see:
+            <a href="/is-your-company-being-found-in-ai" class="text-indigo-600 dark:text-indigo-300 underline underline-offset-4 hover:opacity-80">
+              Is Your Company Being Found In AI
+            </a>.
+          </p>
+
+          <aside class="mt-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+            <h4 class="text-lg font-bold">Key Takeaways</h4>
+            <ul class="mt-2 list-disc pl-6 text-slate-700 dark:text-slate-200 space-y-2">
+              <li>AI search emphasizes intent + semantics + trust, not just keywords.</li>
+              <li>Pages that are easy to quote (direct answers) are more likely to be cited.</li>
+              <li>Structured data and credibility signals increase mention probability.</li>
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Common errors -->
+        <section id="common-errors" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Common Errors Affecting AI Visibility
+          </h2>
+
+          <ul class="mt-4 space-y-3 text-slate-700 dark:text-slate-200">
+            <li class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+              <strong>Weak entity identity:</strong> inconsistent business name, missing Organization/WebSite schema, unclear services.
+            </li>
+            <li class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+              <strong>No snippet-ready answers:</strong> long intros, few lists, no Q&amp;A blocks, or no TL;DR.
+            </li>
+            <li class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+              <strong>Low proof / credibility:</strong> no citations, no reviews, thin “about” signals, weak backlink profile.
+            </li>
+            <li class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
+              <strong>Technical drag:</strong> slow images, layout shift, broken internal links, duplicate metadata.
+            </li>
+          </ul>
+        </section>
+
+        <!-- How to improve -->
+        <section id="improve-ai-visibility" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            How to Improve AI Search Visibility
+          </h2>
+
+          <div id="tldr" class="mt-4 rounded-2xl border border-indigo-200 dark:border-indigo-900 bg-indigo-50/60 dark:bg-indigo-950/30 p-5">
+            <h3 class="text-lg font-bold">TL;DR — Quick Summary</h3>
+            <ul class="mt-2 list-disc pl-6 text-slate-700 dark:text-slate-200 space-y-2">
+              <li>Make your “primary answers” easy to find and quote near the top of the page.</li>
+              <li>Strengthen entity signals: consistent name, services, schema, internal links.</li>
+              <li>Add trust: citations, reviews, reputable backlinks, and clear author/publisher data.</li>
+              <li>Improve page experience: speed, mobile, stable images (prevent layout shift).</li>
+            </ul>
+          </div>
+
+          <div class="mt-6 space-y-4">
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <h3 class="text-xl font-bold">Step 1: Make answers quote-ready</h3>
+              <p class="mt-2 text-slate-700 dark:text-slate-200">
+                Use short Q&amp;A blocks, bullets, and “because/therefore” reasoning.
+                If AI can’t extract a clean answer, it won’t cite you.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <h3 class="text-xl font-bold">Step 2: Clarify who you are (entity)</h3>
+              <p class="mt-2 text-slate-700 dark:text-slate-200">
+                Keep business name consistent, reinforce it across nav/footer, and use Organization + WebSite + WebPage schema.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <h3 class="text-xl font-bold">Step 3: Add evidence and freshness</h3>
+              <p class="mt-2 text-slate-700 dark:text-slate-200">
+                Add “last updated,” link to supporting resources, and keep content current.
+                If something is time-sensitive, state “Valid as of Q1 2026.”
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-2xl border border-emerald-200 dark:border-emerald-900 bg-emerald-50/60 dark:bg-emerald-950/20 p-5">
+            <h3 class="text-lg font-bold">The next question people usually ask is…</h3>
+            <p class="mt-2 text-slate-700 dark:text-slate-200">
+              “What should I change first—content or technical SEO?” Start with your top money pages:
+              add direct answers + schema + internal links, then improve speed and authority signals.
+            </p>
+          </div>
+        </section>
+
+        <!-- Comparison Chart (fixed invalid Tailwind classes) -->
+        <section id="comparison-chart" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Comparison Chart: Traditional vs. AI Search Optimization
+          </h2>
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+            Traditional SEO still matters, but AI answers heavily reward semantic clarity, structured data, and trust signals.
+          </p>
+
+          <div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
+            <table class="min-w-full text-sm">
+              <thead class="bg-gradient-to-r from-indigo-50 to-pink-50 dark:from-indigo-950/40 dark:to-pink-950/20">
+                <tr>
+                  <th class="text-left px-5 py-3 font-semibold">Criteria</th>
+                  <th class="text-left px-5 py-3 font-semibold">Traditional Search Optimization</th>
+                  <th class="text-left px-5 py-3 font-semibold">AI Search Optimization</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+                <tr class="bg-white dark:bg-slate-950">
+                  <td class="px-5 py-3 font-semibold">Keyword Strategy</td>
+                  <td class="px-5 py-3">Focuses on specific keyword density and placement.</td>
+                  <td class="px-5 py-3">Emphasizes natural language, entities, and semantic relevance.</td>
+                </tr>
+                <tr class="bg-white dark:bg-slate-950">
+                  <td class="px-5 py-3 font-semibold">Content Creation</td>
+                  <td class="px-5 py-3">Static pages aimed at ranking.</td>
+                  <td class="px-5 py-3">Context-rich pages that answer intent and are easy to cite.</td>
+                </tr>
+                <tr class="bg-white dark:bg-slate-950">
+                  <td class="px-5 py-3 font-semibold">Backlinking</td>
+                  <td class="px-5 py-3">Quantity + quality.</td>
+                  <td class="px-5 py-3">Authority + topical relevance + trustworthiness of sources.</td>
+                </tr>
+                <tr class="bg-white dark:bg-slate-950">
+                  <td class="px-5 py-3 font-semibold">Technical SEO</td>
+                  <td class="px-5 py-3">Speed, mobile, meta tags.</td>
+                  <td class="px-5 py-3">All of that + schema + snippet formatting + stable rendering.</td>
+                </tr>
+                <tr class="bg-white dark:bg-slate-950">
+                  <td class="px-5 py-3 font-semibold">Algorithm Updates</td>
+                  <td class="px-5 py-3">Periodic updates require manual changes.</td>
+                  <td class="px-5 py-3">Continuous adaptation; clear answers and credibility help resilience.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="mt-5 text-slate-700 dark:text-slate-200" data-ai-insight="causal-logic">
+            Traditional optimization alone can be insufficient because AI systems prioritize meaning and trust; therefore, adding semantic structure,
+            schema, and evidence can increase mention probability.
+          </p>
+        </section>
+
+        <!-- Key Terms & Definitions (kept) -->
+        <section id="key-terms-definitions" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Key Terms &amp; Definitions
+          </h2>
+
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+            Understanding the following terms helps you diagnose why you’re not appearing in AI search answers.
+          </p>
+
+          <dl class="mt-6 space-y-5">
+            <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5">
+              <dt class="font-bold">SEO (Search Engine Optimization)</dt>
+              <dd class="mt-2 text-slate-700 dark:text-slate-200">
+                The practice of improving visibility in search results through content, technical improvements, and authority signals.
+              </dd>
+            </div>
+
+            <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5">
+              <dt class="font-bold">Backlink Profile</dt>
+              <dd class="mt-2 text-slate-700 dark:text-slate-200">
+                Links pointing to your website from other sites. Strong, reputable links can materially increase trust.
+              </dd>
+            </div>
+
+            <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5">
+              <dt class="font-bold">Keyword-Rich Content</dt>
+              <dd class="mt-2 text-slate-700 dark:text-slate-200">
+                Content that naturally includes the phrases people search—without stuffing—so systems understand relevance.
+              </dd>
+            </div>
+
+            <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5">
+              <dt class="font-bold">Online Presence</dt>
+              <dd class="mt-2 text-slate-700 dark:text-slate-200">
+                Your overall footprint across your site, profiles, mentions, reviews, directories, and social platforms.
+              </dd>
+            </div>
+          </dl>
+
+          <p class="mt-5 text-slate-700 dark:text-slate-200">
+            More: <a href="/is-your-company-being-found-in-ai" class="text-indigo-600 dark:text-indigo-300 underline underline-offset-4 hover:opacity-80">Is Your Company Being Found In AI</a>
+          </p>
+        </section>
+
+        <!-- Related Questions (kept) -->
+        <section id="related-questions" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Related Questions
+          </h2>
+
+          <div class="mt-5 space-y-5">
+            <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5">
+              <h3 class="text-xl font-bold">Why isn't my business appearing in AI search results?</h3>
+              <p class="mt-2 text-slate-700 dark:text-slate-200">
+                Most often it’s a confidence issue: unclear entity identity, weak proof signals, or no snippet-ready answers.
+                As covered in <a href="#understanding-ai-search-algorithms" class="text-indigo-600 dark:text-indigo-300 underline underline-offset-4">Understanding AI Search Algorithms</a>,
+                systems prioritize relevance + trust + extractability.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5">
+              <h3 class="text-xl font-bold">How can I improve my business's visibility in AI search results?</h3>
+              <p class="mt-2 text-slate-700 dark:text-slate-200">
+                Publish direct answers, add clean schema, strengthen authority via links and reviews, and keep the page fast and mobile-friendly.
+                See <a href="/is-your-company-being-found-in-ai" class="text-indigo-600 dark:text-indigo-300 underline underline-offset-4">Is Your Company Being Found In AI</a>.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5">
+              <h3 class="text-xl font-bold">Prompt: Why is my competitor listed in AI results but not my business?</h3>
+              <p class="mt-2 text-slate-700 dark:text-slate-200">
+                Competitors usually win because they have stronger evidence: more reviews, better backlinks, clearer services, and better “quote blocks.”
+                If you match those signals, your mention probability increases.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ (accordion, aligned with schema) -->
+        <section id="faq" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Frequently Asked Questions
+          </h2>
+
+          <div class="mt-6 space-y-3">
+            <details class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <summary class="cursor-pointer flex items-center justify-between gap-4 font-semibold">
+                Why isn't my business appearing in AI search results?
+                <span class="text-indigo-600 dark:text-indigo-300 group-open:rotate-180 transition-transform">▾</span>
+              </summary>
+              <p class="mt-3 text-slate-700 dark:text-slate-200">
+                Common causes include weak entity signals (who you are), weak trust signals (proof), and weak extractability (no clear answers).
+                Fixing schema + Q&amp;A + authority usually helps.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <summary class="cursor-pointer flex items-center justify-between gap-4 font-semibold">
+                How can I improve my business's visibility in AI search results?
+                <span class="text-indigo-600 dark:text-indigo-300 group-open:rotate-180 transition-transform">▾</span>
+              </summary>
+              <p class="mt-3 text-slate-700 dark:text-slate-200">
+                Create AI-first content with direct answers, strengthen structured data, improve page speed, and build trust through citations,
+                reviews, and reputable backlinks.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <summary class="cursor-pointer flex items-center justify-between gap-4 font-semibold">
+                Is traditional SEO enough for AI search engines?
+                <span class="text-indigo-600 dark:text-indigo-300 group-open:rotate-180 transition-transform">▾</span>
+              </summary>
+              <p class="mt-3 text-slate-700 dark:text-slate-200">
+                Traditional SEO is necessary, but AI answers usually require additional structure: semantic clarity, schema, and quote-ready blocks.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <summary class="cursor-pointer flex items-center justify-between gap-4 font-semibold">
+                What role do backlinks play in AI search visibility?
+                <span class="text-indigo-600 dark:text-indigo-300 group-open:rotate-180 transition-transform">▾</span>
+              </summary>
+              <p class="mt-3 text-slate-700 dark:text-slate-200">
+                Backlinks remain a major trust signal. In AI contexts, topical relevance and source credibility often outweigh raw link count.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-5">
+              <summary class="cursor-pointer flex items-center justify-between gap-4 font-semibold">
+                How do AI search algorithms differ from traditional search engines?
+                <span class="text-indigo-600 dark:text-indigo-300 group-open:rotate-180 transition-transform">▾</span>
+              </summary>
+              <p class="mt-3 text-slate-700 dark:text-slate-200">
+                AI search often synthesizes answers from trusted sources. So your job is to be identifiable, quoteable, and credible.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <!-- Negative scope clarification -->
+        <section id="negative-scope" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            What This Does NOT Cover (On Purpose)
+          </h2>
+
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+            This guide focuses on <strong>organic</strong> AI-first visibility. It does not cover:
+          </p>
+
+          <ul class="mt-4 list-disc pl-6 text-slate-700 dark:text-slate-200 space-y-2">
+            <li>Paid ads or sponsorship placements in AI results</li>
+            <li>Short-term “hack” tactics that may reduce long-term trust</li>
+            <li>Industry-specific compliance/legal advice</li>
+          </ul>
+
+          <p class="mt-4 text-sm text-slate-600 dark:text-slate-400">
+            If you want a page-by-page audit plan, link this page with your site structure and we’ll format a diagnostic checklist.
+          </p>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-6 md:p-8 shadow-sm">
+          <h2 class="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+            Conclusion
+          </h2>
+
+          <p class="mt-4 text-slate-700 dark:text-slate-200 leading-relaxed">
+            If your business isn’t being mentioned in AI search results, treat it as a <strong>confidence gap</strong>.
+            Strengthen identity (entity), structure (quote-ready answers), and credibility (proof). Do those consistently,
+            and AI systems have more reason—and more ability—to cite you.
+          </p>
+
+          <div class="mt-6 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white p-6 shadow">
+            <h3 class="text-xl font-bold">Ready to improve AI visibility?</h3>
+            <p class="mt-2 text-white/90">
+              Start by reviewing: <a class="underline underline-offset-4" href="/is-your-company-being-found-in-ai">Is Your Company Being Found In AI</a>
+            </p>
+          </div>
+        </section>
+
+        <footer class="text-sm text-slate-600 dark:text-slate-400">
+          <p><strong>Last Updated:</strong> <time datetime="2026-01-12T18:14:40.882Z">January 12, 2026</time></p>
+        </footer>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-16 rounded-3xl bg-slate-900 text-white p-10">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-extrabold bg-gradient-to-r from-indigo-300 to-violet-300 bg-clip-text text-transparent">
+            Boston SEO Services
+          </h3>
+          <p class="mt-2 text-white/70">Optimized for AI visibility and search engine performance.</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold">Quick Links</h4>
+          <ul class="mt-2 space-y-2 text-white/70">
+            <li><a class="hover:text-white transition" href="https://bostonseoservices.org">Home</a></li>
+            <li><a class="hover:text-white transition" href="https://bostonseoservices.org/sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold">Connect</h4>
+          <p class="mt-2 text-white/70">Built with RefrdAI v2.0</p>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-white/10 text-center text-white/50 text-sm">
         <p>&copy; 2026 Boston SEO Services. All rights reserved.</p>
       </div>
     </footer>
   </main>
-
-  <script>
-    // Reading progress (minimal JS)
-    (function () {
-      const bar = document.getElementById('reading-progress-bar');
-      function update() {
-        const doc = document.documentElement;
-        const scrollTop = window.pageYOffset || doc.scrollTop;
-        const scrollable = doc.scrollHeight - window.innerHeight;
-        const pct = scrollable > 0 ? (scrollTop / scrollable) * 100 : 0;
-        const v = Math.max(0, Math.min(100, pct));
-        if (bar) {
-          bar.style.width = v + '%';
-          bar.setAttribute('aria-valuenow', String(Math.round(v)));
-        }
-      }
-      window.addEventListener('scroll', update, { passive: true });
-      window.addEventListener('resize', update);
-      update();
-    })();
-
-    // Mobile menu
-    (function () {
-      const toggle = document.getElementById('mobile-menu-toggle');
-      const menu = document.getElementById('mobile-menu');
-      if (!toggle || !menu) return;
-      toggle.addEventListener('click', function () {
-        menu.classList.toggle('hidden');
-        const isOpen = !menu.classList.contains('hidden');
-        toggle.setAttribute('aria-expanded', String(isOpen));
-      });
-    })();
-  </script>
 </body>
 </html>
