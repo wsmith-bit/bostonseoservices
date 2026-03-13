@@ -162,9 +162,94 @@
       .footerCta{flex-direction:row;align-items:center}
     }
   </style>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Site custom styles -->
+  <style>
+    .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+    .focus-ring:focus { outline: 3px solid rgba(250, 204, 21, 0.9); outline-offset: 3px; }
+    body { background-color: #020617 !important; color: #f1f5f9 !important; }
+    /* Dark theme content overrides */
+    .bg-white, .bg-gray-50, .bg-gray-100, .bg-slate-50 { background-color: #1e293b !important; }
+    .text-gray-900, .text-gray-800, .text-gray-700 { color: #f1f5f9 !important; }
+    .text-gray-600, .text-gray-500 { color: #94a3b8 !important; }
+    .border-gray-200, .border-gray-300 { border-color: rgba(255,255,255,0.1) !important; }
+    .card { background-color: #1e293b !important; border-color: rgba(255,255,255,0.1) !important; color: #f1f5f9 !important; }
+    .card-header { background-color: #0f172a !important; color: #f1f5f9 !important; border-color: rgba(255,255,255,0.1) !important; }
+    .card-body { color: #f1f5f9 !important; }
+    .text-dark, .text-muted { color: #94a3b8 !important; }
+    .container { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
+  </style>
 </head>
 
-<body>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Top Bar -->
+  <div class="bg-black/60 text-slate-200 text-xs">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          <strong>Boston SEO Services</strong>
+          <span class="hidden sm:inline text-slate-400">— AI-first SEO, GEO & AEO</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="/ai-search-visibility-audit-tool" class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/15 focus-ring">Free AI Visibility Audit</a>
+        <a href="https://calendly.com/222/30min" class="px-3 py-1 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-300 focus-ring">Book a Call</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-slate-950/70 glass border-b border-white/10" role="banner">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 focus-ring rounded" aria-label="Boston SEO Services home">
+        <img src="/apple-touch-icon.png" alt="Boston SEO Services logo" class="h-9 w-9 rounded" width="36" height="36" loading="eager" decoding="async">
+        <div class="leading-tight">
+          <div class="font-semibold tracking-wide text-slate-100">Boston SEO Services</div>
+          <div class="text-[11px] text-slate-300">AI-First SEO, GEO, AEO</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-5 text-sm" aria-label="Primary navigation">
+        <a href="/" class="text-slate-200 hover:text-yellow-300 focus-ring rounded px-2 py-1">Home</a>
+        <a href="/seo-audit" class="text-slate-200 hover:text-yellow-300 focus-ring rounded px-2 py-1">Services</a>
+        <a href="/ai-search-visibility-audit-tool" class="text-slate-200 hover:text-yellow-300 focus-ring rounded px-2 py-1">AI Audit</a>
+        <a href="/contact-us" class="text-slate-200 hover:text-yellow-300 focus-ring rounded px-2 py-1">Contact</a>
+        <a href="https://calendly.com/222/30min" class="px-4 py-2 rounded-full bg-yellow-400 text-black font-semibold hover:bg-yellow-300 focus-ring">
+          Book a Call
+        </a>
+      </nav>
+
+      <button id="mobileBtn" class="md:hidden px-3 py-2 rounded-lg bg-white/10 hover:bg-white/15 focus-ring text-slate-200" aria-controls="mobileNav" aria-expanded="false">
+        Menu
+      </button>
+    </div>
+
+    <div id="mobileNav" class="md:hidden hidden border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="/" class="px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 focus-ring text-slate-200">Home</a>
+        <a href="/seo-audit" class="px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 focus-ring text-slate-200">Services</a>
+        <a href="/ai-search-visibility-audit-tool" class="px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 focus-ring text-slate-200">AI Audit</a>
+        <a href="/contact-us" class="px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 focus-ring text-slate-200">Contact</a>
+        <a href="https://calendly.com/222/30min" class="px-3 py-2 rounded-lg bg-yellow-400 text-black font-semibold hover:bg-yellow-300 focus-ring">Book a Call</a>
+      </div>
+    </div>
+  </header>
+  <script>
+    (function() {
+      var btn = document.getElementById("mobileBtn");
+      var nav = document.getElementById("mobileNav");
+      if (btn && nav) {
+        btn.addEventListener("click", function () {
+          var isOpen = btn.getAttribute("aria-expanded") === "true";
+          btn.setAttribute("aria-expanded", String(!isOpen));
+          nav.classList.toggle("hidden");
+        });
+      }
+    })();
+  </script>
+
   <div class="topbar">
     <div class="wrap">
       <div class="row">
@@ -548,24 +633,51 @@
       </div>
     </section>
 
-    <footer class="section" style="padding-top:24px">
-      <div class="wrap">
-        <div class="card p24 footerCta">
-          <div>
-            <div style="font-weight:900;font-size:20px">Want a plan that wins rankings + AI visibility?</div>
-            <div style="margin-top:6px;color:var(--muted)">Talk with Boston SEO Services about AI-First SEO for your personal injury firm.</div>
-          </div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn green" href="https://calendly.com/222/15-minute-meeting">Book a strategy session</a>
-            <a class="btn primary" href="#audit">Get free audit</a>
-          </div>
-        </div>
-
-        <div class="small" style="margin-top:16px;color:rgba(233,238,252,.50)">
-          © <span id="year"></span> Boston SEO Services, LLC. All rights reserved.
-        </div>
+    
+  <!-- Site Footer -->
+  <footer class="bg-black border-t border-white/10 mt-16" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-10 text-sm text-slate-200">
+      <div>
+        <h3 class="font-extrabold text-lg">Boston SEO Services</h3>
+        <p class="mt-3 text-slate-300">
+          AI-first SEO for brands that want durable rankings and to be trusted answers in AI systems.
+        </p>
+        <p class="mt-3 text-slate-400 text-xs">
+          Phone: <a href="tel:+15085618276" class="underline hover:text-yellow-300">+1 (508) 561-8276</a><br>
+          Email: <a href="mailto:wsmith@bostonseoservices.org" class="underline hover:text-yellow-300">wsmith@bostonseoservices.org</a>
+        </p>
       </div>
-    </footer>
+      <div>
+        <h4 class="font-bold">Quick links</h4>
+        <ul class="mt-3 space-y-2 text-slate-300">
+          <li><a href="/" class="underline hover:text-yellow-300">Home</a></li>
+          <li><a href="/seo-audit" class="underline hover:text-yellow-300">SEO Audit</a></li>
+          <li><a href="/ai-search-visibility-audit-tool" class="underline hover:text-yellow-300">AI Visibility Audit Tool</a></li>
+          <li><a href="/contact-us" class="underline hover:text-yellow-300">Contact</a></li>
+          <li><a href="/privacy-policy" class="underline hover:text-yellow-300">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold">Address</h4>
+        <p class="mt-3 text-slate-300">
+          Boston SEO Services, LLC<br>
+          30 Newbury St, 3rd Floor<br>
+          Boston, MA 02116
+        </p>
+        <p class="mt-3">
+          <a href="https://www.google.com/maps/place/Boston+SEO+Services+%26+Website+Design"
+             target="_blank" rel="noopener"
+             class="inline-flex px-4 py-2 rounded-full bg-white/10 border border-white/10 hover:bg-white/15 text-sm">
+            View on Google Maps
+          </a>
+        </p>
+        <p class="mt-4 text-xs text-slate-500">
+          © 2026 Boston SEO Services. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
   </main>
 
   <script>
