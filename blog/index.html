@@ -37,14 +37,189 @@
   </script>
 
   <!-- Tailwind CSS -->
+  <script>tailwind.config={darkMode:"class"}</script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
     .focus-ring:focus { outline: 3px solid rgba(250, 204, 21, 0.9); outline-offset: 3px; }
   </style>
+  <!-- Blog Post Dark Theme Styles -->
+  <style>
+    /* === Reading Progress Bar === */
+    #rpWrap{position:fixed;top:0;left:0;right:0;height:3px;z-index:90;background:rgba(255,255,255,0.06)}
+    #rpBar{height:100%;width:0%;background:rgba(250,204,21,0.95);transition:width .1s linear}
+
+    /* === Tailwind dark mode class strategy === */
+
+    /* === Base typography === */
+    main h1,article h1,.article-title{font-size:clamp(1.9rem,1.3rem + 2vw,3rem);font-weight:800;line-height:1.15;color:#f1f5f9;margin-bottom:.75rem}
+    main h2,article h2{font-size:clamp(1.35rem,1rem + 1vw,1.9rem);font-weight:700;line-height:1.25;color:#f1f5f9;margin:2.5rem 0 .75rem;padding-bottom:.4rem;border-bottom:1px solid rgba(255,255,255,0.08)}
+    main h3,article h3{font-size:1.15rem;font-weight:700;color:#e2e8f0;margin:1.75rem 0 .5rem}
+    main h4,article h4{font-size:1rem;font-weight:600;color:#cbd5e1;margin:1.25rem 0 .4rem}
+    main p,article p{color:#cbd5e1;line-height:1.75;margin:.875rem 0}
+    main a,article a{color:#fbbf24;text-decoration:underline;text-underline-offset:3px}
+    main a:hover,article a:hover{color:#fde68a}
+    main strong,article strong,main b,article b{color:#f1f5f9}
+    main em,article em{color:#e2e8f0}
+    main ul,article ul,main ol,article ol{color:#cbd5e1;padding-left:1.5rem;margin:.75rem 0}
+    main li,article li{margin:.375rem 0;line-height:1.7}
+    main small,article small,.small,.meta,.byline,.lede{color:#94a3b8!important;font-size:.9rem}
+
+    /* === Content container === */
+    .wrap,.container,.main-content,main>article,#main-content>section{
+      max-width:860px;margin:0 auto;padding:1.5rem 1.5rem
+    }
+
+    /* === Article header / hero (the page-level header block) === */
+    main>header,.article-hero,.page-header{
+      background:linear-gradient(180deg,#0f172a 0%,transparent 100%)!important;
+      border-bottom:1px solid rgba(255,255,255,0.08)!important;
+      padding:3.5rem 1.5rem 2rem!important
+    }
+
+    /* === Table of contents === */
+    .toc,nav.toc,[class*="toc-"]{
+      background:rgba(255,255,255,0.04)!important;
+      border:1px solid rgba(255,255,255,0.1)!important;
+      border-radius:1rem!important;padding:1.25rem 1.5rem!important;margin:1.5rem 0!important
+    }
+    .toc strong,.toc b{color:#f1f5f9!important}
+    .toc a{color:#fbbf24!important;text-decoration:none!important}
+    .toc a:hover{color:#fde68a!important;text-decoration:underline!important}
+    .toc ol,.toc ul{color:#cbd5e1!important;padding-left:1.25rem}
+    .toc li{margin:.25rem 0}
+
+    /* === Callout / note boxes === */
+    .note,[class*="callout"],[class*="highlight-box"]{
+      background:rgba(251,191,36,0.08)!important;
+      border-left:4px solid #fbbf24!important;
+      border-radius:0 .75rem .75rem 0!important;
+      padding:1rem 1.25rem!important;margin:1.5rem 0!important;color:#f1f5f9!important
+    }
+    .note strong{color:#fbbf24!important}
+
+    /* === Figures and charts === */
+    figure{
+      background:#1e293b!important;border:1px solid rgba(255,255,255,0.1)!important;
+      border-radius:1rem!important;padding:1rem!important;margin:1.5rem 0!important;overflow:hidden
+    }
+    figcaption{color:#94a3b8!important;font-size:.875rem!important;margin-top:.5rem!important}
+
+    /* Dark SVG chart backgrounds */
+    figure svg rect[fill="white"],figure svg rect[fill="#fff"],figure svg rect[fill="#ffffff"]{fill:#1e293b!important}
+    figure svg rect[fill="#f8fafc"],figure svg rect[fill="#F8FAFC"]{fill:#1e293b!important}
+    figure svg text{fill:#cbd5e1!important}
+    figure svg line{stroke:rgba(255,255,255,0.15)!important}
+
+    /* === Tables === */
+    table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:.95rem;border-radius:.75rem;overflow:hidden}
+    table thead{background:#0f172a!important}
+    table th{background:#0f172a!important;color:#fbbf24!important;font-weight:700;padding:.75rem 1rem;border:1px solid rgba(255,255,255,0.1)!important;text-align:left}
+    table td{padding:.75rem 1rem;border:1px solid rgba(255,255,255,0.08)!important;color:#cbd5e1!important;background:transparent!important;vertical-align:top}
+    table tr:nth-child(even) td{background:rgba(255,255,255,0.025)!important}
+    table tr:hover td{background:rgba(255,255,255,0.05)!important}
+
+    /* === Code blocks === */
+    .kbd,code:not([class]),kbd{
+      background:#0f172a!important;border:1px solid rgba(255,255,255,0.15)!important;
+      border-radius:.375rem!important;padding:2px 6px!important;color:#fbbf24!important;
+      font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.875em
+    }
+    pre{background:#0f172a!important;border:1px solid rgba(255,255,255,0.1)!important;border-radius:.75rem!important;padding:1.25rem!important;overflow-x:auto;margin:1.25rem 0}
+    pre code{background:transparent!important;border:none!important;padding:0!important;color:#a5f3fc!important}
+
+    /* === Details/Summary (FAQ accordion) === */
+    details{
+      background:rgba(255,255,255,0.04)!important;border:1px solid rgba(255,255,255,0.1)!important;
+      border-radius:.75rem!important;padding:1rem 1.25rem!important;margin:.5rem 0!important
+    }
+    summary{color:#f1f5f9!important;font-weight:600;cursor:pointer;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    summary::before{content:"+ ";color:#fbbf24}
+    details[open] summary::before{content:"− ";color:#fbbf24}
+    details p,details div{color:#cbd5e1!important;margin-top:.75rem}
+
+    /* === Testimonials === */
+    .testimonial{
+      background:rgba(255,255,255,0.05)!important;border:1px solid rgba(255,255,255,0.1)!important;
+      border-radius:1rem!important;padding:1.5rem!important;margin:1.5rem 0!important;
+      border-left:4px solid #34d399!important
+    }
+    .testimonial p{color:#e2e8f0!important;font-style:italic}
+    .testimonial .author{color:#94a3b8!important;font-size:.875rem;margin-top:.5rem}
+
+    /* === CTA links within content === */
+    a.cta,.cta-link{
+      display:inline-block;background:#fbbf24!important;color:#000!important;
+      font-weight:700;border-radius:2rem;padding:.625rem 1.5rem;text-decoration:none!important;
+      margin:1rem 0;transition:background .15s
+    }
+    a.cta:hover,.cta-link:hover{background:#fde68a!important}
+
+    /* === Blockquotes === */
+    blockquote{
+      background:rgba(255,255,255,0.04)!important;border-left:4px solid #fbbf24!important;
+      padding:1rem 1.25rem!important;border-radius:0 .75rem .75rem 0!important;
+      margin:1.5rem 0!important;color:#e2e8f0!important
+    }
+
+    /* === Sidebar / two-col layouts === */
+    .sidebar{
+      background:rgba(255,255,255,0.04)!important;border:1px solid rgba(255,255,255,0.1)!important;
+      border-radius:1rem!important;padding:1.25rem!important
+    }
+    .sidebar a{color:#fbbf24!important}
+
+    /* === Breadcrumb === */
+    .bseo-breadcrumb{
+      max-width:860px;margin:0 auto;padding:1rem 1.5rem .5rem;
+      font-size:.875rem;color:#94a3b8;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap
+    }
+    .bseo-breadcrumb a{color:#fbbf24;text-decoration:none}
+    .bseo-breadcrumb a:hover{text-decoration:underline}
+    .bseo-breadcrumb span{color:#475569}
+
+    /* === Bottom article CTA === */
+    .bseo-article-cta{
+      max-width:860px;margin:3rem auto 0;padding:0 1.5rem
+    }
+    .bseo-article-cta .inner{
+      background:linear-gradient(135deg,#1e293b,#0f172a);
+      border:1px solid rgba(255,255,255,0.1);border-radius:1.25rem;
+      padding:2rem;text-align:center
+    }
+    .bseo-article-cta h2{border-bottom:none!important;font-size:1.5rem!important;margin-top:0!important;color:#f1f5f9!important}
+    .bseo-article-cta p{color:#94a3b8!important}
+    .bseo-article-cta .btn-y{display:inline-block;background:#fbbf24;color:#000!important;font-weight:700;border-radius:2rem;padding:.75rem 1.75rem;text-decoration:none!important;margin:.25rem}
+    .bseo-article-cta .btn-y:hover{background:#fde68a}
+    .bseo-article-cta .btn-g{display:inline-block;background:rgba(255,255,255,0.1);color:#f1f5f9!important;font-weight:600;border-radius:2rem;padding:.75rem 1.75rem;text-decoration:none!important;margin:.25rem;border:1px solid rgba(255,255,255,0.15)}
+    .bseo-article-cta .btn-g:hover{background:rgba(255,255,255,0.15)}
+
+    /* === Groovepages inline-style overrides === */
+    [style*="background-color:#0073e6"],[style*="background-color: #0073e6"]{background-color:#1e293b!important}
+    [style*="background-color:#fff"],[style*="background-color: #fff"],[style*="background:#fff"]{background-color:#1e293b!important}
+    [style*="background-color:white"],[style*="background-color: white"]{background-color:#1e293b!important}
+    [style*="color:#000"],[style*="color: #000"],[style*="color:black"],[style*="color: black"]{color:#f1f5f9!important}
+    [style*="color:#333"],[style*="color: #333"]{color:#cbd5e1!important}
+    [style*="color:#555"],[style*="color: #555"],[style*="color:#666"],[style*="color: #666"]{color:#94a3b8!important}
+
+    /* === Light Tailwind overrides for dark: variant pages === */
+    .bg-slate-50,.bg-slate-100,.bg-white{background-color:#1e293b!important}
+    .bg-indigo-50,.bg-violet-50,.bg-purple-50,.bg-blue-50{background-color:rgba(99,102,241,0.1)!important}
+    .text-slate-900,.text-slate-800,.text-slate-700{color:#f1f5f9!important}
+    .text-slate-600,.text-slate-500{color:#94a3b8!important}
+    .border-slate-200,.border-slate-300{border-color:rgba(255,255,255,0.1)!important}
+    .shadow-sm,.shadow-md,.shadow-lg,.shadow-xl{box-shadow:0 1px 3px rgba(0,0,0,0.5)!important}
+    /* Restore explicitly yellow/green/colored elements */
+    .bg-yellow-400{background-color:#fbbf24!important}
+    .bg-emerald-400,.bg-green-400{background-color:#34d399!important}
+  </style>
 </head>
 
 <body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- Reading Progress Bar -->
+  <div id="rpWrap" aria-hidden="true"><div id="rpBar"></div></div>
+
 
   <!-- Top Bar -->
   <div class="bg-black/60 text-slate-200 text-xs">
@@ -113,6 +288,14 @@
       }
     })();
   </script>
+
+    <div class="bseo-breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <a href="/blog/">Blog</a>
+    <span>/</span>
+    <span class="text-slate-300">Boston SEO Services Blog</span>
+  </div>
 
   <main id="main">
 
@@ -335,7 +518,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="bg-black border-t border-white/10" role="contentinfo">
     <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-10 text-sm text-slate-200">
       <div>
@@ -375,6 +557,18 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      var bar=document.getElementById("rpBar");
+      if(!bar) return;
+      function upd(){
+        var d=document.documentElement,s=d.scrollTop||document.body.scrollTop,h=(d.scrollHeight||document.body.scrollHeight)-d.clientHeight;
+        bar.style.width=(h>0?Math.min(100,Math.max(0,s/h*100)):0)+"%";
+      }
+      upd();window.addEventListener("scroll",upd,{passive:true});window.addEventListener("resize",upd);
+    })();
+  </script>
 
 </body>
 </html>
