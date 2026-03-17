@@ -361,6 +361,250 @@
     ]
   }
   </script>
+
+  <!-- Ultimate Guide Enhanced Styles -->
+  <style>
+    /* ── Article Page Hero ───────────────────────────────── */
+    .article-page-hero {
+      background: linear-gradient(165deg, #020617 0%, #0f172a 45%, #1a1f35 100%);
+      border-bottom: 1px solid rgba(251,191,36,0.15);
+      padding: 3.5rem 1.5rem 2.5rem;
+      position: relative; overflow: hidden;
+    }
+    .article-page-hero::before {
+      content: "";
+      position: absolute; top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(251,191,36,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .aph-inner {
+      max-width: 860px; margin: 0 auto;
+    }
+    .aph-tag {
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: #fbbf24;
+      background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.2);
+      border-radius: 2rem; padding: .2rem .875rem; margin-bottom: 1.25rem;
+    }
+    .aph-title {
+      font-size: clamp(2rem, 1.4rem + 2.5vw, 3.4rem) !important;
+      font-weight: 800 !important; line-height: 1.1 !important;
+      letter-spacing: -.025em !important;
+      background: linear-gradient(135deg, #f8fafc 0%, #fde68a 60%, #fbbf24 100%);
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+      margin: 0 0 1rem !important;
+      border-bottom: none !important; padding-bottom: 0 !important;
+    }
+    .aph-sub {
+      font-size: clamp(.975rem, .9rem + .3vw, 1.15rem) !important;
+      color: #94a3b8 !important; line-height: 1.7 !important;
+      margin: 0 0 1.5rem !important; max-width: 700px;
+    }
+    .aph-meta {
+      display: flex; flex-wrap: wrap; align-items: center;
+      gap: .5rem .75rem; font-size: .875rem; color: #64748b;
+      margin-bottom: 1.75rem;
+    }
+    .aph-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 2px solid rgba(251,191,36,0.4);
+    }
+    .aph-name { color: #f1f5f9; font-weight: 600; }
+    .aph-sep { color: #334155; }
+    .aph-badge {
+      background: rgba(52,211,153,0.12); color: #34d399;
+      border: 1px solid rgba(52,211,153,0.25); border-radius: 2rem;
+      padding: .1rem .625rem; font-size: .75rem; font-weight: 600;
+    }
+    .aph-ctas { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .aph-btn-primary {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: #fbbf24; color: #000 !important; font-weight: 700;
+      border-radius: 2rem; padding: .65rem 1.5rem;
+      text-decoration: none !important; font-size: .9375rem;
+      transition: background .15s, transform .1s;
+    }
+    .aph-btn-primary:hover { background: #fde68a; transform: translateY(-1px); }
+    .aph-btn-ghost {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: rgba(255,255,255,0.06); color: #cbd5e1 !important;
+      border: 1px solid rgba(255,255,255,0.12); font-weight: 600;
+      border-radius: 2rem; padding: .65rem 1.5rem;
+      text-decoration: none !important; font-size: .9375rem;
+      transition: background .15s;
+    }
+    .aph-btn-ghost:hover { background: rgba(255,255,255,0.1); }
+
+    /* ── Hide duplicate h1 in main-content (hero shows it) ── */
+    .main-content > h1:first-child {
+      font-size: 1.1rem !important; font-weight: 600 !important;
+      color: #475569 !important; letter-spacing: .02em !important;
+      background: none !important; -webkit-text-fill-color: unset !important;
+      text-fill-color: unset !important;
+      margin: 0 0 .5rem !important; padding-bottom: 0 !important;
+      border-bottom: none !important;
+      font-style: italic; opacity: 0.7;
+    }
+
+    /* ── CTA inline links → styled pill buttons ──────────── */
+    a.cta, .cta-link {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: #000 !important; font-weight: 700;
+      border-radius: 2rem; padding: .7rem 1.75rem;
+      text-decoration: none !important; margin: 1.25rem 0; font-size: .9375rem;
+      box-shadow: 0 4px 16px rgba(251,191,36,0.25);
+      transition: background .15s, transform .1s, box-shadow .15s;
+    }
+    a.cta:hover, .cta-link:hover {
+      background: linear-gradient(135deg, #fde68a, #fbbf24);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(251,191,36,0.35);
+    }
+
+    /* ── Two-column layout: content + sticky TOC sidebar ─── */
+    @media (min-width: 1060px) {
+      .container {
+        display: grid !important;
+        grid-template-columns: 1fr 260px !important;
+        grid-template-areas: "content toc" !important;
+        gap: 3rem !important;
+        max-width: 1160px !important;
+        align-items: start !important;
+        padding: 2rem 1.5rem !important;
+      }
+      .main-content { grid-area: content; }
+      .sidebar {
+        grid-area: toc;
+        position: sticky; top: 5.5rem;
+        max-height: calc(100vh - 8rem);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(251,191,36,0.3) transparent;
+      }
+    }
+
+    /* ── TOC sidebar polish ─── */
+    .sidebar h2, .sidebar > strong, .sidebar b {
+      font-size: .75rem !important; font-weight: 800 !important;
+      letter-spacing: .1em !important; text-transform: uppercase !important;
+      color: #fbbf24 !important; margin: 0 0 .875rem !important;
+      border-bottom: none !important; padding-bottom: 0 !important;
+    }
+    .sidebar ul { padding-left: 0 !important; list-style: none !important; }
+    .sidebar ul li { margin: .1rem 0 !important; }
+    .sidebar ul li a {
+      display: block; padding: .3rem .5rem; border-radius: .375rem;
+      font-size: .8125rem !important; color: #64748b !important;
+      text-decoration: none !important;
+      transition: color .12s, background .12s;
+    }
+    .sidebar ul li a:hover {
+      color: #fbbf24 !important; background: rgba(251,191,36,0.08);
+    }
+
+    /* ── Hero image upgrade ───────────────────────────────── */
+    .ai-hero {
+      border-radius: 1.25rem !important; overflow: hidden;
+      box-shadow: 0 12px 64px rgba(0,0,0,0.6) !important;
+      margin: 1.5rem 0 2rem !important;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .ai-hero img { border-radius: 0 !important; display: block !important; }
+
+    /* ── Section visual separators ───────────────────────── */
+    .main-content h2 {
+      padding-top: .5rem;
+    }
+    .main-content h2::after {
+      display: none; /* use border-bottom from global style */
+    }
+
+    /* ── Callout / note boxes ─────────────────────────────── */
+    .note-box, .tip-box, .warning-box {
+      border-radius: .875rem; padding: 1rem 1.25rem; margin: 1.75rem 0;
+    }
+    .note-box { background: rgba(99,102,241,0.08); border-left: 4px solid #818cf8; }
+    .tip-box { background: rgba(52,211,153,0.07); border-left: 4px solid #34d399; color: #e2e8f0 !important; }
+    .warning-box { background: rgba(251,191,36,0.08); border-left: 4px solid #fbbf24; }
+
+    /* ── Checklist styling ────────────────────────────────── */
+    .checklist ul { list-style: none !important; padding-left: 0 !important; }
+    .checklist li {
+      padding: .5rem .75rem .5rem 2.25rem; position: relative;
+      margin: .25rem 0; border-radius: .5rem;
+      background: rgba(52,211,153,0.04);
+      border: 1px solid rgba(52,211,153,0.1);
+    }
+    .checklist li::before {
+      content: "✓"; position: absolute; left: .625rem;
+      color: #34d399; font-weight: 700;
+    }
+
+    /* ── About author card ────────────────────────────────── */
+    .about-author {
+      background: linear-gradient(135deg, rgba(251,191,36,0.07), rgba(251,191,36,0.02)) !important;
+      border: 1px solid rgba(251,191,36,0.2) !important;
+      border-radius: 1.25rem !important;
+      padding: 1.75rem !important; margin: 2.5rem 0 !important;
+    }
+    .about-author h3 {
+      color: #fbbf24 !important; margin-top: 0 !important;
+      font-size: 1rem !important; font-weight: 700 !important;
+      letter-spacing: .05em !important; text-transform: uppercase !important;
+      border-bottom: none !important;
+    }
+    .about-author p { color: #cbd5e1 !important; font-size: .9375rem !important; }
+
+    /* ── Testimonial upgrade ──────────────────────────────── */
+    .testimonial {
+      background: linear-gradient(135deg, rgba(52,211,153,0.07), rgba(52,211,153,0.02)) !important;
+      border: 1px solid rgba(52,211,153,0.2) !important;
+      border-left: 4px solid #34d399 !important;
+      border-radius: 1rem !important; padding: 1.5rem !important;
+    }
+    .testimonial p { font-size: 1.075rem !important; line-height: 1.7 !important; }
+    .testimonial .author { color: #34d399 !important; font-weight: 600; margin-top: .75rem; }
+
+    /* ── FAQ section in main content (h3 Q&A style) ─────── */
+    .main-content #faq + h3, .main-content #faq ~ h3 { margin-top: 1.25rem !important; }
+
+    /* ── Summary table header standout ───────────────────── */
+    .main-content #summary-table + table th:nth-child(3) {
+      background: rgba(251,191,36,0.12) !important;
+      color: #fde68a !important;
+    }
+
+    /* ── Stats grid ───────────────────────────────────────── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem; margin: 1.75rem 0;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: .875rem; padding: 1.25rem; text-align: center;
+      transition: border-color .15s;
+    }
+    .stat-card:hover { border-color: rgba(251,191,36,0.3); }
+    .stat-card .stat-num {
+      font-size: 2rem; font-weight: 800; color: #fbbf24; line-height: 1;
+      display: block; margin-bottom: .375rem;
+    }
+    .stat-card .stat-label { font-size: .8rem; color: #64748b; line-height: 1.4; }
+
+    /* ── Pull quote ───────────────────────────────────────── */
+    .pull-quote {
+      font-size: 1.2rem; font-weight: 700; color: #fde68a;
+      border-left: 4px solid #fbbf24; padding: .875rem 1.5rem;
+      margin: 2rem 0; font-style: italic; line-height: 1.55;
+      background: rgba(251,191,36,0.04); border-radius: 0 .875rem .875rem 0;
+    }
+  </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased">
   <!-- Reading Progress Bar -->
@@ -371,10 +615,6 @@
 
   <!-- Last Updated -->
   <div class="bseo-updated" role="note">Last updated: January 2026 &middot; Valid as of Q1 2026</div>
-
-  </div>
-</div>
-
 
   <!-- Top Bar -->
   <div class="bg-black/60 text-slate-200 text-xs">
@@ -446,6 +686,29 @@
 
 
 
+  <!-- Article Hero Header -->
+  <div class="article-page-hero">
+    <div class="aph-inner">
+      <div class="aph-tag">&#x1F9E0; AI Search Optimization &middot; Ultimate Guide</div>
+      <h1 class="aph-title">The Ultimate Guide to<br>AI Search Optimization</h1>
+      <p class="aph-sub">The complete AEO + GEO framework for getting your business cited in ChatGPT, Gemini, Perplexity &amp; Google AI Overviews &mdash; including schema, topic clusters, local SEO, and monitoring.</p>
+      <div class="aph-meta">
+        <img src="/apple-touch-icon.png" alt="Bill Smith" width="36" height="36" class="aph-avatar" loading="lazy">
+        <span class="aph-name">Bill Smith</span>
+        <span class="aph-sep">&middot;</span>
+        <span>Boston SEO Services</span>
+        <span class="aph-sep">&middot;</span>
+        <span>15 min read</span>
+        <span class="aph-sep">&middot;</span>
+        <span class="aph-badge">Updated Jan 2026</span>
+      </div>
+      <div class="aph-ctas">
+        <a href="https://calendly.com/222/free-aeo-geo-visibility-review" class="aph-btn-primary">&#x1F4C5; Get Free AI Visibility Review</a>
+        <a href="#tldr" class="aph-btn-ghost">Skip to TL;DR &darr;</a>
+      </div>
+    </div>
+  </div>
+
   <!-- Social Sharing Bar -->
   <div class="bseo-share-bar" style="max-width:860px;margin:.75rem auto 0;padding:0 1.5rem">
     <div style="display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.8rem;color:#94a3b8">
@@ -471,6 +734,7 @@
               onmouseout="this.style.borderColor=&#39;rgba(255,255,255,0.15)&#39;;this.style.color=&#39;#94a3b8&#39;"
               type="button">Copy Link</button>
     </div>
+  </div><!-- /bseo-share-bar -->
   <!-- Author / Byline -->
   <div class="bseo-byline" role="contentinfo">
     <img src="/apple-touch-icon.png" alt="Bill Smith" class="avatar" width="32" height="32" loading="lazy">
@@ -536,6 +800,24 @@
 		<p data-ai-insight="true">When I sit down with business owners in Boston, one question keeps coming up: “How do I make sure my website gets found in this new world of AI search?” It’s a great question—because the way people search for information online has changed dramatically. Gone are the days when ranking at the top of Google was enough. Now, AI-driven platforms like ChatGPT, Perplexity, Google SGE, and Bing Copilot are answering questions directly, often pulling information from trusted sources and summarizing it for users.</p>
 		<p data-ai-insight="true">Here’s what I tell my clients: if you want to stay ahead, you need to optimize for AI visibility. It’s not just about keywords or backlinks anymore—it’s about making sure AI understands your content and sees your business as an authority.</p>
 		<a href="https://calendly.com/222/free-aeo-geo-visibility-review" class="cta">Book a free AI Visibility Review now</a>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Major AI Search Platforms Covered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">25</span>
+            <span class="stat-label">Optimization Chapters</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">500%</span>
+            <span class="stat-label">AI Traffic Increase (Case Study)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">1,417</span>
+            <span class="stat-label">Keywords in AI Overviews Achieved</span>
+          </div>
+        </div>
 		<h2 id="understanding">2. Understanding AI Search: What’s Different?</h2>
 		<p data-ai-insight="true">I often explain to clients that AI search isn’t just a new version of Google. It’s a whole new way of finding information. AI models focus on understanding what you mean, not just the words you type. They connect people, places, and ideas in a way that feels more like a conversation than a list of links.</p>
 		<h3>Key AI Platforms You Should Know About</h3>
@@ -758,6 +1040,10 @@
 				<li>Regular updates and community engagement</li>
 			</ul>
 		</div>
+        <blockquote class="pull-quote">
+          "If you want to stay ahead, you need to optimize for AI visibility. It's not just about keywords or backlinks anymore — it's about making sure AI understands your content and sees your business as an authority."
+          <footer style="font-size:.8rem;color:#94a3b8;margin-top:.5rem;font-style:normal">— Bill Smith, Boston SEO Services</footer>
+        </blockquote>
 		<h2 id="conclusion">25. Conclusion</h2>
 		<p>I’ve seen firsthand how Boston businesses can thrive when they embrace AI-driven search. Take, for example, a coffee shop in the North End that started appearing in ChatGPT’s local recommendations after we updated their schema and added a few local FAQs. That’s the kind of impact you can achieve. By making your content clear, structured, and authoritative—and by sharing real stories from your business—you’ll stand out in the age of AI search.</p>
 		<a href="https://calendly.com/222/free-aeo-geo-visibility-review" class="cta">Get a custom AI Visibility Audit today and see how you perform in ChatGPT, Perplexity, and Google SGE</a>
